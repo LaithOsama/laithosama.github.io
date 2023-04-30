@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Based Ebooks | Julius Evola</title>
+<link rel='stylesheet' type='text/css' href='../../style.css'>
+<link rel="icon" href="data:,">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<h1>Browse Evola's Books</h1>
+ <hr>
+ <center><input id="search" onkeyup="search()" type="text" placeholder="Search All Books" style=margin-bottom:2em></center>
+<script>
+function search() {
+    let input = document.getElementById('search').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('book');
+      
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display="none";
+        }
+        else {
+            x[i].style.display="list-item";                 
+        }
+    }
+}
+</script>
+<div id=ebooks>
+<!-- Index -->
+<div class=book>
+<img src=/home/laith/code/projects/based-ebooks/imgs/a-handbook-for-right-wing-youth.jpg alt=''/>
+<p><a href='books/evola/A Handbook for Right Wing Youth by Julius Evola.pdf'>A Handbook for Right Wing Youth</a></p>
+<p><a href='https://en.wikipedia.org/wiki/Julius Evola'><i>Julius Evola</i></a></p>
+</div>
+<div class=book>
+<img src=/home/laith/code/projects/based-ebooks/imgs/introduction-to-magic.jpg alt=''/>
+<p><a href='books/evola/Introduction to Magic - Julius Evola.pdf'>Introduction to Magic</a></p>
+<p><a href='https://en.wikipedia.org/wiki/Julius Evola'><i>Julius Evola</i></a></p>
+</div>
+<div class=book>
+<img src=/home/laith/code/projects/based-ebooks/imgs/ride-the-tiger.jpg alt=''/>
+<p><a href='books/evola/Ride the Tiger - Julius Evola.pdf'>Ride the Tiger</a></p>
+<p><a href='https://en.wikipedia.org/wiki/Julius Evola'><i>Julius Evola</i></a></p>
+</div>
+<div class=book>
+<img src=/home/laith/code/projects/based-ebooks/imgs/revolt-against-the-modern-world.jpg alt=''/>
+<p><a href="books/evola/Revolt Against the Modern World - Julius Evola.pdf">Revolt Against the Modern World</a></p>
+<p><a href='https://en.wikipedia.org/wiki/Julius Evola'><i>Julius Evola</i></a></p>
+</div>
+</div>
+</body>
+</html>

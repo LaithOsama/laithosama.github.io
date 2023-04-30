@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Based Ebooks</title>
+<link rel="icon" href="data:,">
+<meta charset="utf-8">
+<link rel='stylesheet' type='text/css' href='style.css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+<img src="images/header.png" alt="">
+<h1>/Based/Ebooks</h1>
+</header>
+<nav>
+<a href="index.html">Home</a> <a href="about.html">About</a> <a href="abfaq.html">FAQ</a> <a href="ablinks.html">Links</a>
+</nav>
+<main>
+<h1>Browse Ebooks</h1>
+<hr>
+<center><input id="search" onkeyup="search()" type="text" placeholder="Search All Books" style=margin-bottom:2em></center>
+<script>
+function search() {
+    let input = document.getElementById('search').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('book');
+      
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display="none";
+        }
+        else {
+            x[i].style.display="list-item";                 
+        }
+    }
+}
+</script>
+<div id=ebooks>
+<!-- Index -->
+<div class=book>
+<img src=books/Julius-Evola/pagan-imperialism-and-metaphysics-of-war/cover.jpeg alt=/>
+<p><strong>Pagan Imperialism and Metaphysics of War</strong></p>
+<p><a href=https://en.wikipedia.org/wiki/Julius Evola><i>Julius Evola</i></a></p>
+<a href=books/Julius-Evola/pagan-imperialism-and-metaphysics-of-war/Pagan Imperialism and Metaphysics of War - Julius Evola.pdf>[English]</a>
+</div>
+<div class=book>
+<img src=books/dugin/political-platnoism/cover.jpeg alt=/>
+<p><strong>Political Platonism</strong></p>
+<p><a href=https://en.wikipedia.org/wiki/Alexander Dugin><i>Alexander Dugin</i></a></p>
+<a href='books/dugin/political-platnoism/Political Platonism - Alexander Dugin.epub'>[English]</a>
+</div>
+<div class=book>
+<img src=books/dugin/ethnosociology-the-foundations/cover.jpeg alt=/>
+<p><strong>Ethnosociology The Foundations</strong></p>
+<p><a href=https://en.wikipedia.org/wiki/Alexander Dugin><i>Alexander Dugin</i></a></p>
+<a href='books/dugin/ethnosociology-the-foundations/Ethnosociology The Foundations (Alexander Dugin) (z-lib.org).pdf'>[English]</a>
+ <p></p>
+ </div>
+<div class=book>
+<img src=books/dugin/fourth-political-theory/cover.jpeg alt=/>
+<p><strong>Fourth Political Theory</strong></p>
+<p><a href=https://en.wikipedia.org/wiki/Alexander Dugin><i>Alexander Dugin</i></a></p>
+<a href='books/dugin/fourth-political-theory/Alexander Dugin - Fourth Political Theory.pdf'>[English]</a>
+ <p></p>
+ </div>
+<div class=book>
+<img src=books/Julius-Evola/east-and-west/cover.jpeg alt=/>
+<p><strong>East and West</strong></p>
+<p><a href=https://en.wikipedia.org/wiki/Julius-Evola><i>Julius-Evola</i></a></p>
+<a href=books/Julius-Evola/east-and-west/East and West - Julius Evola.pdf>[English]</a>
+ <p></p>
+ </div>
+
+    <div class=book>
+        <img src=books/Julius-Evola/the-yoga-of-power/cover.jpeg alt=/>
+        <p><strong>The Yoga of Power</strong></p>
+        <p><a href=https://en.wikipedia.org/wiki/Julius-Evola><i>Julius-Evola</i></a></p>
+        <a href=books/Julius-Evola/the-yoga-of-power/The Yoga of Power - Julius Evola.pdf>[English]</a>
+    </div>
+    <div class=book>
+        <img src=books/Julius-Evola/men-among-the-ruins/cover.jpeg alt=/>
+        <p><strong>Men Among The Ruins</strong></p>
+        <p><a href=https://en.wikipedia.org/wiki/Julius-Evola><i>Julius-Evola</i></a></p>
+        <a href=books/Julius-Evola/men-among-the-ruins/Men Among The Ruins - Julius Evola.pdf>[English]</a>
+    </div>
+    <div class=book>
+        <img src=/home/laith/code/projects/based-ebooks/books/Julius-Evola/a-handbook-for-right-wing-youth/cover.jpeg alt=''/>
+        <p><strong>A Handbook for Right Wing Youth</strong></p>
+        <p><a href='https://en.wikipedia.org/wiki/Julius Evola'><i>Julius Evola</i></a></p>
+        <a href='books/evola/A Handbook for Right Wing Youth by Julius Evola.pdf'>[English]</a>
+    </div>
+    <div class=book>
+        <img src=/home/laith/code/projects/based-ebooks/books/Julius-Evola/introduction-to-magic\cover.jpeg alt=''/>
+        <p><strong>Introduction to Magic</strong></a></p>
+        <p><a href='https://en.wikipedia.org/wiki/Julius Evola'><i>Julius Evola</i></p>
+    <a href='books/evola/Introduction to Magic - Julius Evola.pdf'>[English]</a>
+    </div>
+    <div class=book>
+        <img src=/home/laith/code/projects/based-ebooks/books/Julius-Evola/ride-the-tiger/cover.jpeg alt=''/>
+        <p><strong>Ride the Tiger</strong></a></p>
+        <p><a href='https://en.wikipedia.org/wiki/Julius Evola'><i>Julius Evola</i></p>
+        <a href='books/evola/Ride the Tiger - Julius Evola.pdf'>[English]</a>
+    </div>
+    <div class=book>
+        <img src=/home/laith/code/projects/based-ebooks/books/Julius-Evola/revolt-against-the-modern-world/cover.jpeg alt=''/>
+        <p><a href="books/evola/Revolt Against the Modern World - Julius Evola.pdf"><strong>Revolt Against the Modern World</strong></a></p>
+        <p><a href='https://en.wikipedia.org/wiki/Julius Evola'><i>Julius Evola</i></a></p>
+        <a href='books/evola/Ride the Tiger - Julius Evola.pdf'>[English]</a>
+    </div>
+</div>
+<h1>Browse the authors</h1>
+<hr>
+<div id=authors>
+    <div class=book>
+         <a href=""><img src="imgs/heidegger1.jpg" alt=""/></a>
+         <p><a href="https://en.wikipedia.org/wiki/Martin_Heidegger"><i>Martin Heidegger</i></a></p>
+    </div>
+    <div class=book>
+        <a href=""> <img src="imgs/guenon.webp" alt="" style=hight:365px;width:225px /> </a>
+        <p><a href="https://en.wikipedia.org/wiki/René_Guénon" ><i>René Guénon</i></a></p>
+    </div>
+    <div class=book>
+        <a href=""> <img src="imgs/dugin.jpeg" alt=""/> </a>
+        <p><a href="https://en.wikipedia.org/wiki/Aleksandr_Dugin"><i>Aleksandr Dugin</i></a></p>
+    </div>
+    <div class=book>
+        <a href="https://en.wikipedia.org/wiki/Julius_Evola"> <img src="imgs/evola.jpeg" alt=""/> </a>
+        <p><a href="books/Julius-Evola/index.html"><i>Julius Evola</i></a></p>
+    </div>
+    <div class=book>
+        <a href=""> <img src="imgs/nietzsche.jpeg" alt=""/> </a>
+        <p><a href="https://en.wikipedia.org/wiki/Friedrich_Nietzsche"><i>Friedrich Nietzsche</i></a></p>
+    </div>
+</div>
+</main>
+</body>
+</html>
