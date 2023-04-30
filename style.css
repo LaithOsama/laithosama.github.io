@@ -3,8 +3,9 @@
   url('fonts/cloisterblack.woff') format('woff'), /* Modern Browsers */
   url('fonts/cloisterblack.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
-@media (max-width: 380px) ol.ebooks-list.grid { grid-template-columns: 1fr; }
-@media (max-width: 470px) ol.ebooks-list.grid { grid-gap: 2rem; }
+input, button, textarea, select { font:inherit; }
+p, h1, h2, h3, h4, h5, h6 { overflow-wrap:break-word; }
+
 header a:hover {color: #999}
 *{box-sizing:border-box;padding:0;margin:0;border:none}
 body{color:#5a5136;background:#e1d8b3;display: flex;flex-direction: column;}
@@ -22,5 +23,5 @@ input[type="text"]{width:50%;background:#ebdbb2;border-radius:5px;border:1px sol
 #authors,#ebooks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));list-style:none}
 .book{text-align:center;padding-top:3rem}
 .book img{width:225px;height:365px;border:1px solid #222;border-radius:.3rem}
-@media (max-width: 600px) #authors,#ebooks {grid-template-columns: repeat(2, minmax(0, 1fr))}
+@media (max-width: 700px) #authors,#ebooks {grid-template-columns: repeat(2, minmax(0, 1fr))}
 /* @media (max-width: 900px) #authors,#ebooks {grid-template-columns: repeat(3, minmax(0, 1fr))} *//*  */
