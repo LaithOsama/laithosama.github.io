@@ -1,196 +1,421 @@
-<!DOCTYPE html>
+CTYPE html>
 <html lang="en">
-<head>
-<title>Based Ebooks</title>
-<link rel="icon" href="data:,">
-<meta charset="utf-8">
-<link rel='stylesheet' type='text/css' href='style.css'>
-<link rel="preload" as="font" href="fonts/cloisterblack.woff" type="font/woff" crossorigin="anonymous"/>
-<link href="dark.css" media="screen and (prefers-color-scheme: dark)" rel="stylesheet" type="text/css"/>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-<header>
-<img src="images/header.png" alt="">
-<a href=index.html><h1>/Based/Ebooks</h1></a>
-</header>
-<nav>
-<a href="index.html">Home</a> <a href="about.html">About</a> <a href="abfaq.html">FAQ</a> <a href="ablinks.html">Links</a>
-</nav>
-<main>
-<h1>Browse Ebooks</h1>
-<hr>
-<center><input id="search" onkeyup="search()" type="text" placeholder="Search All Books" style=margin-bottom:2em></center>
-<script>
-function search() {
-    let input = document.getElementById('search').value
-    input=input.toLowerCase();
-    let x = document.getElementsByClassName('book');
-      
-    for (i = 0; i < x.length; i++) { 
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display="none";
+  <head>
+    <title>Based Ebooks
+    </title>
+    <link rel="icon" href="data:,">
+    <meta charset="utf-8">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel="preload" as="font" href="fonts/cloisterblack.woff" type="font/woff" crossorigin="anonymous">
+    <link href="dark.css" media="screen and (prefers-color-scheme: dark)" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <img src="images/header.png" alt="">
+      <a href=index.html>
+        <h1>/Based/Ebooks
+        </h1>
+      </a>
+    </header>
+    <nav>
+      <a href="index.html">Home
+      </a> 
+      <a href="about.html">About
+      </a> 
+      <a href="abfaq.html">FAQ
+      </a> 
+      <a href="ablinks.html">Links
+      </a>
+    </nav>
+    <main>
+      <h1>Browse Ebooks
+      </h1>
+      <hr>
+      <center>
+        <input id="search" onkeyup="search()" type="text" placeholder="Search All Books" style=margin-bottom:2em>
+      </center>
+      <script>
+        function search() {
+          let input = document.getElementById('search').value
+          input=input.toLowerCase();
+          let x = document.getElementsByClassName('book');
+          for (i = 0; i < x.length; i++) {
+            if (!x[i].innerHTML.toLowerCase().includes(input)) {
+              x[i].style.display="none";
+            }
+            else {
+              x[i].style.display="list-item";
+            }
+          }
         }
-        else {
-            x[i].style.display="list-item";                 
-        }
-    }
-}
-</script>
-<ol id=ebooks>
-<!-- Index -->
-<li class=book>
-<a href="books/evola/introduction-to-magic/index.html" tabindex="-1" property="schema:url">
-<picture>
-<source srcset="books/evola/introduction-to-magic/cover.jpeg" type="image/jpg"/>
-<img src="books/evola/introduction-to-magic/cover.jpeg" alt="" property="schema:image" height="365" width="225"/>
-</picture>
-</a>
-<p><a href="books/evola/introduction-to-magic/index.html" property="schema:url">Introduction to Magic</a></p>
-<p><a href='books/evola/index.html'><i>Julius Evola</i></p></a>
-<div class="details"><p>416 Pages</p><p>Philosophy</p><p> Spirituality</p></div>
-</li>
-
-    </li>
-    <li class=book>
-        <a href="books/evola/ride-the-tiger/index.html" tabindex="-1" property="schema:url">
-<picture>
-<source srcset="books/evola/ride-the-tiger/cover.jpeg" type="image/jpg"/>
-        <img src=books/evola/ride-the-tiger/cover.jpeg alt=''  height="365" width="225"/>
-</picture>
-<p><a href="books/evola/ride-the-tiger/index.html" property="schema:url">Ride the Tiger</a></p>
-<p><a href='books/evola/index.html'><i>Julius Evola</i></p></a>
-<div class="details"><p>242 Pages</p><p>Philosophy</p><p>Politics</p></div>
-    </li>
-    <li class=book>
-<a href="books/evola/ride-the-tiger/index.html" tabindex="-1" property="schema:url">
-<picture>
-<source srcset="books/evola/revolt-against-the-modern-world/cover.jpeg" type="image/jpg"/>
-        <img src=books/evola/revolt-against-the-modern-world/cover.jpeg alt=''  height="365" width="225"/>
-</picture>
-<p><a href="books/evola/revolt-against-the-modern-world/index.html" property="schema:url">Revolt Against the Modern World</a></p>
-<p><a href='books/evola/index.html'><i>Julius Evola</i></p></a>
-<div class="details"><p>375 Pages</p><p>Philosophy</p><p> Spirituality</p></div>
-    </li>
-    <li class=book>
-<a href="books/dugin/ethnosociology-the-foundations/index.html" tabindex="-1" property="schema:url">
-<picture>
-<source srcset="books/dugin/ethnosociology-the-foundations/cover.jpeg" type="image/jpg"/>
-        <img src=books/dugin/ethnosociology-the-foundations/cover.jpeg alt=  height="365" width="225"/>
-</picture>
-       <p><a href="books/evola/ethnosociology-the-foundations/index.html" property="schema:url">Ethnosociology: The Foundations</a></p>
-       <p><a href=books/dugin/index.html><i>Aleksandr Dugin</i></a></p>
-<div class="details"><p>308 Pages</p><p>Philosophy</p><p>Sociology</p></div>
-    </li>
-    <li class=book>
-<a href="books/dugin/fourth-political-theory/index.html" tabindex="-1" property="schema:url">
-<picture>
-<source srcset="books/dugin/fourth-political-theory/cover.jpeg" type="image/jpg"/>
-        <img src=books/dugin/fourth-political-theory/cover.jpeg alt=  height="365" width="225"/>
-</picture>
-        <p><a href="books/evola/fourth-political-theory/index.html" property="schema:url">Fourth Political Theory</a></p>
-       <p><a href=books/dugin/index.html><i>Aleksandr Dugin</i></a></p>
-<div class="details"><p>211 Pages</p><p>Philosophy</p><p>Politics</p></div>
-    </li>
-    <li class=book>
-<a href="books/evola/east-and-west/index.html" tabindex="-1" property="schema:url">
-<picture>
-<source srcset="books/evola/east-and-west/cover.jpeg" type="image/jpg"  height="365" width="225"/>
-        <img src=books/evola/east-and-west/cover.jpeg alt=/>
-        </picture>
-       <p><a href="books/evola/east-and-west/index.html" property="schema:url">East and West</p>
-<p><a href='books/evola/index.html'><i>Julius Evola</i></p></a>
-<div class="details"><p>198 Pages</p><p>Philosophy</p><p>Politics</p></div>
-    </li>
-    <li class=book>
-<a href="books/evola/the-yoga-of-power/index.html" tabindex="-1" property="schema:url">
-<picture>
-<source srcset="books/evola/the-yoga-of-power/cover.jpeg" type="image/jpg"/>
-        <img src=books/evola/the-yoga-of-power/cover.jpeg alt=  height="365" width="225"/>
-        </picture>
-        <p><a href="books/evola/the-yoga-of-power/index.html" property="schema:url">The Yoga of Power</p>
-<p><a href='books/evola/index.html'><i>Julius Evola</i></p></a>
-<div class="details"><p>256 Pages</p><p>Philosophy</p><p> Spirituality</p></div>
-    </li>
-    <li class=book>
-<a href="books/evola/men-among-the-ruins/index.html" tabindex="-1" property="schema:url">
-<picture>
-<source srcset="books/evola/men-among-the-ruins/cover.jpeg" type="image/jpg"/>
-        <img src=books/evola/men-among-the-ruins/cover.jpeg alt=  height="365" width="225"/>
-        </picture>
-        <p><a href="books/evola/men-among-the-ruins/index.html" property="schema:url">Men Among The Ruins</p>
-<p><a href='books/evola/index.html'><i>Julius Evola</i></p></a>
-<div class="details"><p>328 Pages</p><p>Philosophy</p><p>Politics</p></div>
-    </li>
-    <li class=book>
-<a href="books/evola/a-handbook-for-right-wing-youth/index.html" tabindex="-1" property="schema:url">
-<picture>
-<source srcset="books/evola/a-handbook-for-right-wing-youth/cover.jpeg" type="image/jpg"/>
-        <img src=books/evola/a-handbook-for-right-wing-youth/cover.jpeg alt=''  height="365" width="225"/>
-        </picture>
-        <p><a href="books/evola/a-handbook-for-right-wing-youth/index.html" property="schema:url">A Handbook for Right Wing Youth</p>
-<p><a href='books/evola/index.html'><i>Julius Evola</i></p></a>
-<div class="details"><p>180 Pages</p><p>Philosophy</p><p>Politics</p></div>
-    </li>
-    <li class=book>
-<a href="books/evola/pagan-imperialism-and-metaphysics-of-war/index.html" tabindex="-1" property="schema:url">
-<source srcset="books/evola/pagan-imperialism-and-metaphysics-of-war/cover.jpeg" type="image/jpg"/>
-        <img src=books/evola/pagan-imperialism-and-metaphysics-of-war/cover.jpeg alt=  height="365" width="225"/>
-        </picture>
-        <p><a href="books/evola/pagan-imperialism-and-metaphysics-of-war/index.html" property="schema:url">Pagan Imperialism and Metaphysics of War</p>
-        <p><a href="books/evola/index.html"><i>Julius Evola</i></a></p>
-<div class="details"><p>204 Pages</p><p>Philosophy</p><p>Politics</p></div>
-    </li>
-    <li class=book>
-<a href="books/evola/political-platnoism/index.html" tabindex="-1" property="schema:url">
-<source srcset="books/evola/political-platnoism/cover.jpeg" type="image/jpg"  height="365" width="225"/>
-        <img src=books/dugin/political-platnoism/cover.jpeg alt=/>
-        </picture>
-        <p><a href="books/evola/political-platnoism/index.html" property="schema:url">Political Platonism</p>
-       <p><a href=books/dugin/index.html><i>Aleksandr Dugin</i></a></p>
-<div class="details"><p>152 Pages</p><p>Philosophy</p><p>Politics</p></div>
-    </li>
-
-</ol>
-<h1>Browse the authors</h1>
-<hr>
-<ol id=authors>
-    <li class=author>
-<a href="books/heidegger/index.html" tabindex="-1" property="schema:url">
-<source srcset="imgs/heidegger1.jpg" type="image/jpg"/>
-         <a href=""><img src="imgs/heidegger1.jpg" alt=""  height="365" width="225"/></a>
-        </picture>
-         <p><a href="books/heidegger/index.html" property="schema:url"><i>Martin Heidegger</i></a></p>
-    </li>
-    <li class=author>
-<a href="books/guenon/index.html" tabindex="-1" property="schema:url">
-<source srcset="imgs/guenon.webp" type="image/webp"/>
-        <a href=""> <img src="imgs/guenon.webp" alt="" style=hight:365px;width:225px   height="365" width="225"/> </a>
-        </picture>
-        <p><a href="books/guenon/index.html" property="schema:url"><i>René Guénon</i></a></p>
-    </li>
-    <li class=author>
-<a href="books/dugin/index.html" tabindex="-1" property="schema:url">
-<source srcset="ings.dugin.jpeg" type="image/jpg"/>
-        <a href=""> <img src="imgs/dugin.jpeg" alt=""  height="365" width="225"/> </a>
-        </picture>
-        <p><a href="books/dugin/index.html" property="schema:url"><i>Aleksandr Dugin</i></a></p>
-    </li>
-    <li class=author>
-<a href="books/evola/index.html" tabindex="-1" property="schema:url">
-<source srcset="imgs/evola.jpeg" type="image/jpg"/>
-        <img src="imgs/evola.jpeg" alt=""  height="365" width="225"/> </a>
-        <p><a href="books/evola/index.html" property="schema:url"><i>Julius Evola</i></a></p>
-        </picture>
-    </li>
-    <li class=author>
-<a href="books/nietzsche/index.html" tabindex="-1" property="schema:url">
-<source srcset="imgs/nietzsche.jpeg" type="image/jpg"/>
-        <a href=""> <img src="imgs/nietzsche.jpeg" alt=""  height="365" width="225"/> </a>
-        </picture>
-        <p><a href="books/nietzsche/index.html" property="schema:url"><i>Friedrich Nietzsche</i></a></p>
-    </li>
-</ol>
-</main>
-</body>
+      </script>
+      <ol id=ebooks>
+        <!-- Index -->
+        <li class=book>
+          <a href="books/evola/introduction-to-magic/index.html" tabindex="-1" property="schema:url">
+            <picture>
+              <source srcset="books/evola/introduction-to-magic/cover.jpeg" type="image/jpg">
+              <img src="books/evola/introduction-to-magic/cover.jpeg" alt="" property="schema:image">
+            </picture>
+          </a>
+          <p>
+            <a href="books/evola/introduction-to-magic/index.html" property="schema:url">Introduction to Magic
+            </a>
+          </p>
+          <p>
+            <a href='books/evola/index.html'>
+              <i>Julius Evola
+              </i>
+            </a>
+          </p>
+          <div class="details">
+            <p>416 Pages
+            </p>
+            <p>Philosophy
+            </p>
+            <p> Spirituality
+            </p>
+          </div>
+        </li>
+        <li class=book>
+          <a href="books/evola/ride-the-tiger/index.html" tabindex="-1" property="schema:url">
+            <picture>
+              <source srcset="books/evola/ride-the-tiger/cover.jpeg" type="image/jpg">
+              <img src=books/evola/ride-the-tiger/cover.jpeg alt=''>
+            </picture>
+          </a>
+          <p>
+            <a href="books/evola/ride-the-tiger/index.html" property="schema:url">Ride the Tiger
+            </a>
+          </p>
+          <p>
+            <a href='books/evola/index.html'>
+              <i>Julius Evola
+              </i>
+            </a>
+          </p>
+          <div class="details">
+            <p>242 Pages
+            </p>
+            <p>Philosophy
+            </p>
+            <p>Politics
+            </p>
+          </div>
+        </li>
+        <li class=book>
+          <a href="books/evola/ride-the-tiger/index.html" tabindex="-1" property="schema:url">
+            <picture>
+              <source srcset="books/evola/revolt-against-the-modern-world/cover.jpeg" type="image/jpg">
+              <img src=books/evola/revolt-against-the-modern-world/cover.jpeg alt=''>
+            </picture>
+          </a>
+          <p>
+            <a href="books/evola/revolt-against-the-modern-world/index.html" property="schema:url">Revolt Against the Modern World
+            </a>
+          </p>
+          <p>
+            <a href='books/evola/index.html'>
+              <i>Julius Evola
+              </i>
+            </a>
+          </p>
+          <div class="details">
+            <p>375 Pages
+            </p>
+            <p>Philosophy
+            </p>
+            <p> Spirituality
+            </p>
+          </div>
+        </li>
+        <li class=book>
+          <a href="books/dugin/ethnosociology-the-foundations/index.html" tabindex="-1" property="schema:url">
+            <picture>
+              <source srcset="books/dugin/ethnosociology-the-foundations/cover.jpeg" type="image/jpg">
+              <img src=books/dugin/ethnosociology-the-foundations/cover.jpeg alt="">
+            </picture>
+          </a>
+          <p>
+            <a href="books/evola/ethnosociology-the-foundations/index.html" property="schema:url">Ethnosociology: The Foundations
+            </a>
+          </p>
+          <p>
+            <a href=books/dugin/index.html>
+              <i>Aleksandr Dugin
+              </i>
+            </a>
+          </p>
+          <div class="details">
+            <p>308 Pages
+            </p>
+            <p>Philosophy
+            </p>
+            <p>Sociology
+            </p>
+          </div>
+        </li>
+        <li class=book>
+          <a href="books/dugin/fourth-political-theory/index.html" tabindex="-1" property="schema:url">
+            <picture>
+              <source srcset="books/dugin/fourth-political-theory/cover.jpeg" type="image/jpg">
+              <img src=books/dugin/fourth-political-theory/cover.jpeg alt="">
+            </picture>
+          </a>
+          <p>
+            <a href="books/evola/fourth-political-theory/index.html" property="schema:url">Fourth Political Theory
+            </a>
+          </p>
+          <p>
+            <a href=books/dugin/index.html>
+              <i>Aleksandr Dugin
+              </i>
+            </a>
+          </p>
+          <div class="details">
+            <p>211 Pages
+            </p>
+            <p>Philosophy
+            </p>
+            <p>Politics
+            </p>
+          </div>
+        </li>
+        <li class=book>
+          <a href="books/evola/east-and-west/index.html" tabindex="-1" property="schema:url">
+            <picture>
+              <source srcset="books/evola/east-and-west/cover.jpeg" type="image/jpg">
+              <img src=books/evola/east-and-west/cover.jpeg alt=>
+            </picture>
+          </a>
+          <p>
+            <a href="books/evola/east-and-west/index.html" property="schema:url">East and West
+            </a>
+          </p>
+          <p>
+            <a href='books/evola/index.html'>
+              <i>Julius Evola
+              </i>
+            </a>
+          </p>
+          <div class="details">
+            <p>198 Pages
+            </p>
+            <p>Philosophy
+            </p>
+            <p>Politics
+            </p>
+          </div>
+        </li>
+        <li class=book>
+          <a href="books/evola/the-yoga-of-power/index.html" tabindex="-1" property="schema:url">
+            <picture>
+              <source srcset="books/evola/the-yoga-of-power/cover.jpeg" type="image/jpg">
+              <img src=books/evola/the-yoga-of-power/cover.jpeg alt="">
+            </picture>
+          </a>
+          <p>
+            <a href="books/evola/the-yoga-of-power/index.html" property="schema:url">The Yoga of Power
+            </a>
+          </p>
+          <p>
+            <a href='books/evola/index.html'>
+              <i>Julius Evola
+              </i>
+            </a>
+          </p>
+          <div class="details">
+            <p>256 Pages
+            </p>
+            <p>Philosophy
+            </p>
+            <p> Spirituality
+            </p>
+          </div>
+        </li>
+        <li class=book>
+          <a href="books/evola/men-among-the-ruins/index.html" tabindex="-1" property="schema:url">
+            <picture>
+              <source srcset="books/evola/men-among-the-ruins/cover.jpeg" type="image/jpg">
+              <img src=books/evola/men-among-the-ruins/cover.jpeg alt="">
+            </picture>
+          </a>
+          <p>
+            <a href="books/evola/men-among-the-ruins/index.html" property="schema:url">Men Among The Ruins
+            </a>
+          </p>
+          <p>
+            <a href='books/evola/index.html'>
+              <i>Julius Evola
+              </i>
+            </a>
+          </p>
+          <div class="details">
+            <p>328 Pages
+            </p>
+            <p>Philosophy
+            </p>
+            <p>Politics
+            </p>
+          </div>
+        </li>
+        <li class=book>
+          <a href="books/evola/a-handbook-for-right-wing-youth/index.html" tabindex="-1" property="schema:url">
+            <picture>
+              <source srcset="books/evola/a-handbook-for-right-wing-youth/cover.jpeg" type="image/jpg">
+              <img src=books/evola/a-handbook-for-right-wing-youth/cover.jpeg alt=''>
+            </picture>
+          </a>
+          <p>
+            <a href="books/evola/a-handbook-for-right-wing-youth/index.html" property="schema:url">A Handbook for Right Wing Youth
+            </a>
+          </p>
+          <p>
+            <a href='books/evola/index.html'>
+              <i>Julius Evola
+              </i>
+            </a>
+          </p>
+          <div class="details">
+            <p>180 Pages
+            </p>
+            <p>Philosophy
+            </p>
+            <p>Politics
+            </p>
+          </div>
+        </li>
+        <li class=book>
+          <a href="books/evola/pagan-imperialism-and-metaphysics-of-war/index.html" tabindex="-1" property="schema:url">
+            <picture>
+              <source srcset="books/evola/pagan-imperialism-and-metaphysics-of-war/cover.jpeg" type="image/jpg">
+              <img src=books/evola/pagan-imperialism-and-metaphysics-of-war/cover.jpeg alt=>
+            </picture>
+          </a>
+          <p>
+            <a href="books/evola/pagan-imperialism-and-metaphysics-of-war/index.html" property="schema:url">Pagan Imperialism and Metaphysics of War
+            </a>
+          </p>
+          <p>
+            <a href="books/evola/index.html">
+              <i>Julius Evola
+              </i>
+            </a>
+          </p>
+          <div class="details">
+            <p>204 Pages
+            </p>
+            <p>Philosophy
+            </p>
+            <p>Politics
+            </p>
+          </div>
+        </li>
+        <li class=book>
+          <a href="books/evola/political-platnoism/index.html" tabindex="-1" property="schema:url">
+            <picture>
+              <source srcset="books/evola/political-platnoism/cover.jpeg" type="image/jpg">
+              <img src=books/dugin/political-platnoism/cover.jpeg alt=>
+            </picture>
+          </a>
+          <p>
+            <a href="books/evola/political-platnoism/index.html" property="schema:url">Political Platonism
+            </a>
+          </p>
+          <p>
+            <a href=books/dugin/index.html>
+              <i>Aleksandr Dugin
+              </i>
+            </a>
+          </p>
+          <div class="details">
+            <p>152 Pages
+            </p>
+            <p>Philosophy
+            </p>
+            <p>Politics
+            </p>
+          </div>
+        </li>
+      </ol>
+      <h1>Browse the authors
+      </h1>
+      <hr>
+      <ol id=authors>
+        <li class=author>
+          <a href="books/heidegger/index.html" tabindex="-1" property="schema:url">
+            <picture>
+              <source srcset="imgs/heidegger1.jpg" type="image/jpg">
+              <img src="imgs/heidegger1.jpg" alt="">
+            </picture>
+          </a>
+          <p>
+            <a href="books/heidegger/index.html" property="schema:url">
+              <i>Martin Heidegger
+              </i>
+            </a>
+          </p>
+        </li>
+        <li class=author>
+          <a href="books/guenon/index.html" tabindex="-1" property="schema:url">
+            <picture>
+              <source srcset="imgs/guenon.webp" type="image/webp">
+              <img src="imgs/guenon.webp" alt="" style=height:365px;width:225px>
+            </picture>
+          </a>
+          <p>
+            <a href="books/guenon/index.html" property="schema:url">
+              <i>René Guénon
+              </i>
+            </a>
+          </p>
+        </li>
+        <li class=author>
+          <a href="books/dugin/index.html" tabindex="-1" property="schema:url">
+            <picture>
+              <source srcset="ings.dugin.jpeg" type="image/jpg">
+              <img src="imgs/dugin.jpeg" alt="" >
+            </picture>
+          </a>
+          <p>
+            <a href="books/dugin/index.html" property="schema:url">
+              <i>Aleksandr Dugin
+              </i>
+            </a>
+          </p>
+        </li>
+        <li class=author>
+          <a href="books/evola/index.html" tabindex="-1" property="schema:url">
+            <picture>
+              <source srcset="imgs/evola.jpeg" type="image/jpg">
+              <img src="imgs/evola.jpeg" alt=""> 
+            </picture>
+          </a>
+          <p>
+            <a href="books/evola/index.html" property="schema:url">
+              <i>Julius Evola
+              </i>
+            </a>
+          </p>
+        </li>
+        <li class=author>
+          <a href="books/nietzsche/index.html" tabindex="-1" property="schema:url">
+            <picture>
+              <source srcset="imgs/nietzsche.jpeg" type="image/jpg">
+              <img src="imgs/nietzsche.jpeg" alt="">
+            </picture>
+          </a>
+          <p>
+            <a href="books/nietzsche/index.html" property="schema:url">
+              <i>Friedrich Nietzsche
+              </i>
+            </a>
+          </p>
+        </li>
+      </ol>
+    </main>
+  </body>
 </html>
+
+
