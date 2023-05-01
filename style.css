@@ -1,14 +1,14 @@
 @font-face {
-  font-family: 'Cloister Black'
+  font-family: 'Cloister Black';
   url('fonts/cloisterblack.woff') format('woff'), /* Modern Browsers */
-  url('fonts/cloisterblack.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('fonts/cloisterblack.ttf')  format('truetype') /* Safari, Android, iOS */
 }
 input, button, textarea, select { font:inherit; }
 p, h1, h2, h3, h4, h5, h6 { overflow-wrap:break-word; }
 
 header a:hover {color: #999}
 *{box-sizing:border-box;padding:0;margin:0;border:none}
-body{color:#222;background:#e9e7e0;display: flex;flex-direction: column;min-height:100vh}
+body{color:#5a5136;background:#e1d8b3;display: flex;flex-direction: column;min-height:100vh}
 header{color:#EEE;background-color:#600;height:128px;position:relative}
 header img{height:128px;float:left}
 header h1{position:absolute;left:128px;bottom:0;font:56px 'Cloister Black'}
@@ -17,11 +17,12 @@ nav a{color:#fff;padding:8px 20px 0 20px;float:right;background:url(images/nav.p
 article{max-width:75%;margin:0 auto}
 articel p{padding-bottom:2rem;padding-top:1rem}
 a{color:inherit;text-decoration:none}
-h1{font-size:3rem;text-align:center;margin:3rem}
+h1{font-size:3rem;text-align:center;margin:3rem;font:56px 'Cloister Black'}
 hr{border-bottom:3px double #222;margin:2.5rem}
 input[type="text"]{width:50%;color:#fff;background:rgba(0, 0, 0, .1);border-radius:5px;border:1px solid #777;padding:1.5rem}
-#authors,#ebooks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));list-style:none}
-.book{text-align:center;padding-top:3rem}
+#authors,#ebooks{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));text-align:center;list-style:none  } *//*
+/* #authors,#ebooks{display: flex; flex-direction: column; gap: 0; margin: auto; margin-bottom: 4rem; width: 100%; max-width: 30rem;list-style:none} *//*  */
+.book, .author{text-align:center;padding-top:3rem}
 .book img{width:225px;height:365px;border:1px solid #222;border-radius:.3rem}
-@media (max-width: 700px) #authors,#ebooks {grid-template-columns: repeat(2, minmax(0, 1fr))}
+@media (max-width: 700px) #authors,#ebooks {display: flex; flex-direction: column; gap: 0; margin: auto; margin-bottom: 4rem; width: 100%; max-width: 30rem; }}
 /* @media (max-width: 900px) #authors,#ebooks {grid-template-columns: repeat(3, minmax(0, 1fr))} *//*  */
