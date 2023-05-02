@@ -2,7 +2,7 @@
 @font-face{font-family:"Crimson Pro";src:url(fonts/crimson-pro.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"Crimson Pro";src:url(fonts/crimson-pro-bold.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}
 @font-face{font-family:"Crimson Pro";src:url(fonts/crimson-pro-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
-*{padding:0;margin:0 auto}
+*{padding:0;margin:0}
 body{color:#5a5136;background:#E1D8B4;font-family:'Crimson Pro',Georgia,'Times New Roman'}
 header{color:#EEE;background:#600;height:128px;position:relative}
 header img{height:128px;float:left}
@@ -16,9 +16,10 @@ h1{text-align:center;margin:3rem;font:56px 'Cloister Black'}
 hr{border-bottom:3px double #222;margin:2.5rem}
 input[type="text"]{font:inherit;width:50%;color:#fff;background:#fbf1c7;border-radius:5px;border:1px solid #777;padding:1.5rem}
 #authors,#ebooks{display:grid;grid-template-columns:repeat(4,minmax(0px,1fr));gap:4rem;list-style:none}
-.book p{margin:4px}
+.book p{margin:3px}
 .book,.author{margin:0 auto;text-align:center;padding-top:3rem}
 .book img,.author img{width:225px;height:365px;border:1px solid #222;border-radius:.25rem}
 .book img:hover{transform:scale(1.05);box-shadow:3px 3px 1px rgba(0,0,0,.25);transition:all 200ms ease}
 .details{display:flex}
 .details p{background:#fbf1c7;border-radius:5px;border:1px solid #777;padding:4px}
+@media only screen and (max-width: 600px) {#authors,#ebooks{grid-template-columns:repeat(1,minmax(0px,1fr));}}
