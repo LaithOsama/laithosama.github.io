@@ -1,13 +1,13 @@
-<TYPE html> <html lang="en">
-
+<!DOCTYPE html> <html lang="en">
 <head>
-   <title>Based Ebooks </title>
+   <title>Based Ebooks</title>
    <link rel="icon" href="data:,">
    <meta charset="utf-8">
    <link rel='stylesheet' type='text/css' href='style.css'>
    <link rel="preload" as="font" href="fonts/cloisterblack.woff" type="font/woff" crossorigin="anonymous">
    <link href="dark.css" media="screen and (prefers-color-scheme: dark)" rel="stylesheet" type="text/css">
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script defer src="search.js"></script>
 </head>
 
 <body>
@@ -19,159 +19,187 @@
       <h1>Browse Ebooks </h1>
       <hr>
       <center> <input id="search" onkeyup="search()" type="text" placeholder="Search All Books" style=margin-bottom:2em> </center>
-      <script>
-         function search() {
-           let input = document.getElementById('search').value
-           input = input.toLowerCase();
-           let x = document.getElementsByClassName('book');
-           for (i = 0; i < x.length; i++) {
-             if (!x[i].innerHTML.toLowerCase().includes(input)) {
-               x[i].style.display = "none";
-             } else {
-               x[i].style.display = "list-item";
-             }
-           }
-         }
-      </script>
-      <ol id=ebooks>
+     <ol id=ebooks>
          <!-- Index -->
-         <li class=book> <a href="books/evola/introduction-to-magic/index.html" tabindex="-1" property="schema:url">
+<li class=book> <a href="books/w.k.c-guthrie/a-history-of-greek-philosophy-volume-2/index.html" tabindex="-1" property="schema:url">
                <picture>
-                  <source srcset="books/evola/introduction-to-magic/cover.jpeg" type="image/jpg"> <img src="books/evola/introduction-to-magic/cover.jpeg" alt="" property="schema:image">
+                  <source srcset="books/w.k.c-guthrie/a-history-of-greek-philosophy-volume-2/cover.avif" type="image/avif">
+                  <source srcset="books/w.k.c-guthrie/a-history-of-greek-philosophy-volume-2/cover.jpeg" type="image/jpg"> 
+                  <img src="books/w.k.c-guthrie/a-history-of-greek-philosophy-volume-2/cover.jpg" alt="Introduction to Magic book's cover" property="schema:image" loading="lazy" >
                </picture>
             </a>
-            <p> <a href="books/evola/introduction-to-magic/index.html" property="schema:url">Introduction to Magic </a> </p>
-            <p> <a href='books/evola/index.html'> <i>Julius Evola </i> </a> </p>
+            <p> <a href='books/w.k.c-guthrie/a-history-of-greek-philosophy-volume-2/index.html' property="schema:url">A History of Greek Philosophy, Volume 2: The Presocratic Tradition from Parmenides to Democritus</a> </p>
+            <p> <a href='books/w.k.c-guthrie/index.html'> <i>W. K. C. Guthrie</i> </a> </p>
+            <div class="details">
+               <p>576 Pages</p>
+               <p>Philosophy</p>
+               <p>History</p>
+            </div>
+         </li>
+         <li class=book> <a href="books/ted-kaczynski/industrial-society-and-its-future/index.html" tabindex="-1" property="schema:url">
+               <picture>
+                  <source srcset="books/ted-kaczynski/industrial-society-and-its-future/cover.avif" type="image/avif">
+                  <source srcset="books/ted-kaczynski/industrial-society-and-its-future/cover.jpeg" type="image/jpg"> 
+                  <img src="books/ted-kaczynski/industrial-society-and-its-future/cover.jpg" alt="Introduction to Magic book's cover" property="schema:image" loading="lazy" >
+               </picture>
+            </a>
+            <p> <a href="books/ted-kaczynski/industrial-society-and-its-future/index.html" property="schema:url">Industrial Society and Its Future</a> </p>
+            <p> <a href='books/ted-kaczynski/index.html'> <i>Theodore John Kaczynski</i> </a> </p>
+            <div class="details">
+               <p>149 Pages</p>
+               <p>Philosophy</p>
+               <p>Politics</p>
+            </div>
+         </li>
+         <li class=book> <a href="books/julius-evola/introduction-to-magic/index.html" tabindex="-1" property="schema:url">
+               <picture>
+                  <source srcset="books/julius-evola/introduction-to-magic/cover.avif" type="image/avif">
+                  <source srcset="books/julius-evola/introduction-to-magic/cover.jpeg" type="image/jpg"> 
+                  <img src="books/julius-evola/introduction-to-magic/cover.jpeg" alt="Introduction to Magic book's cover" property="schema:image" loading="lazy" >
+               </picture>
+            </a>
+            <p> <a href="books/julius-evola/introduction-to-magic/index.html" property="schema:url">Introduction to Magic </a> </p>
+            <p> <a href='books/julius-evola/index.html'> <i>Julius Evola </i> </a> </p>
             <div class="details">
                <p>416 Pages </p>
                <p>Philosophy </p>
                <p> Spirituality </p>
             </div>
          </li>
-         <li class=book> <a href="books/evola/ride-the-tiger/index.html" tabindex="-1" property="schema:url">
+         <li class=book> <a href="books/julius-evola/ride-the-tiger/index.html" tabindex="-1" property="schema:url">
                <picture>
-                  <source srcset="books/evola/ride-the-tiger/cover.jpeg" type="image/jpg"> <img src=books/evola/ride-the-tiger/cover.jpeg alt=''>
+               <source srcset="books/julius-evola/ride-the-tiger/cover.avif" type="image/avif"> 
+                  <source srcset="books/julius-evola/ride-the-tiger/cover.jpeg" type="image/jpg"> <img src=books/julius-evola/ride-the-tiger/cover.jpeg alt="Ride the Tiger book's cover" loading="lazy" >
                </picture>
             </a>
-            <p> <a href="books/evola/ride-the-tiger/index.html" property="schema:url">Ride the Tiger </a> </p>
-            <p> <a href='books/evola/index.html'> <i>Julius Evola </i> </a> </p>
+            <p> <a href="books/julius-evola/ride-the-tiger/index.html" property="schema:url">Ride the Tiger </a> </p>
+            <p> <a href='books/julius-evola/index.html'> <i>Julius Evola </i> </a> </p>
             <div class="details">
                <p>242 Pages </p>
                <p>Philosophy </p>
                <p>Politics </p>
             </div>
          </li>
-         <li class=book> <a href="books/evola/ride-the-tiger/index.html" tabindex="-1" property="schema:url">
+         <li class=book> <a href="books/julius-evola/ride-the-tiger/index.html" tabindex="-1" property="schema:url">
                <picture>
-                  <source srcset="books/evola/revolt-against-the-modern-world/cover.jpeg" type="image/jpg"> <img src=books/evola/revolt-against-the-modern-world/cover.jpeg alt=''>
+                  <source srcset="books/julius-evola/revolt-against-the-modern-world/cover.avif" type="image/avif">
+                  <source srcset="books/julius-evola/revolt-against-the-modern-world/cover.jpeg" type="image/jpg"> <img src="books/julius-evola/revolt-against-the-modern-world/cover.jpeg" alt="Revolt Against the Modern World book's cover" loading="lazy" >
                </picture>
             </a>
-            <p> <a href="books/evola/revolt-against-the-modern-world/index.html" property="schema:url">Revolt Against the Modern World </a> </p>
-            <p> <a href='books/evola/index.html'> <i>Julius Evola </i> </a> </p>
+            <p> <a href="books/julius-evola/revolt-against-the-modern-world/index.html" property="schema:url">Revolt Against the Modern World </a> </p>
+            <p> <a href='books/julius-evola/index.html'> <i>Julius Evola </i> </a> </p>
             <div class="details">
                <p>375 Pages </p>
                <p>Philosophy </p>
                <p> Spirituality </p>
             </div>
          </li>
-         <li class=book> <a href="books/dugin/ethnosociology-the-foundations/index.html" tabindex="-1" property="schema:url">
+         <li class=book> <a href="books/alexander-dugin/ethnosociology-the-foundations/index.html" tabindex="-1" property="schema:url">
                <picture>
-                  <source srcset="books/dugin/ethnosociology-the-foundations/cover.jpeg" type="image/jpg"> <img src=books/dugin/ethnosociology-the-foundations/cover.jpeg alt="">
+<source srcset="books/alexander-dugin/ethnosociology-the-foundations/cover.avif" type="image/avif">
+                  <source srcset="books/alexander-dugin/ethnosociology-the-foundations/cover.jpeg" type="image/jpg"> <img src=books/alexander-dugin/ethnosociology-the-foundations/cover.jpeg alt="Ethnosociology: The Foundations book's cover" loading="lazy" >
                </picture>
             </a>
-            <p> <a href="books/evola/ethnosociology-the-foundations/index.html" property="schema:url">Ethnosociology: The Foundations </a> </p>
-            <p> <a href=books/dugin/index.html> <i>Aleksandr Dugin </i> </a> </p>
+            <p> <a href="books/julius-evola/ethnosociology-the-foundations/index.html" property="schema:url">Ethnosociology: The Foundations </a> </p>
+            <p> <a href=books/alexander-dugin/index.html> <i>Aleksandr Dugin </i> </a> </p>
             <div class="details">
                <p>308 Pages </p>
                <p>Philosophy </p>
                <p>Sociology </p>
             </div>
          </li>
-         <li class=book> <a href="books/dugin/fourth-political-theory/index.html" tabindex="-1" property="schema:url">
+         <li class=book> <a href="books/alexander-dugin/fourth-political-theory/index.html" tabindex="-1" property="schema:url">
                <picture>
-                  <source srcset="books/dugin/fourth-political-theory/cover.jpeg" type="image/jpg"> <img src=books/dugin/fourth-political-theory/cover.jpeg alt="">
+<source srcset="books/alexander-dugin/fourth-political-theory/cover.avif" type="image/avif">
+                  <source srcset="books/alexander-dugin/fourth-political-theory/cover.jpeg" type="image/jpg"> <img src=books/alexander-dugin/fourth-political-theory/cover.jpeg alt="Fourth Political Theory book's cover" loading="lazy" >
                </picture>
             </a>
-            <p> <a href="books/evola/fourth-political-theory/index.html" property="schema:url">Fourth Political Theory </a> </p>
-            <p> <a href=books/dugin/index.html> <i>Aleksandr Dugin </i> </a> </p>
+            <p> <a href="books/julius-evola/fourth-political-theory/index.html" property="schema:url">Fourth Political Theory </a> </p>
+            <p> <a href=books/alexander-dugin/index.html> <i>Aleksandr Dugin </i> </a> </p>
             <div class="details">
                <p>211 Pages </p>
                <p>Philosophy </p>
                <p>Politics </p>
             </div>
          </li>
-         <li class=book> <a href="books/evola/east-and-west/index.html" tabindex="-1" property="schema:url">
+         <li class=book> <a href="books/julius-evola/east-and-west/index.html" tabindex="-1" property="schema:url">
                <picture>
-                  <source srcset="books/evola/east-and-west/cover.jpeg" type="image/jpg"> <img src=books/evola/east-and-west/cover.jpeg alt=>
+<source srcset="books/julius-evola/east-and-west/cover.avif" type="image/avif">
+                  <source srcset="books/julius-evola/east-and-west/cover.jpeg" type="image/jpg"> <img src=books/julius-evola/east-and-west/cover.jpeg alt="East and West book's cover" loading="lazy" >
                </picture>
             </a>
-            <p> <a href="books/evola/east-and-west/index.html" property="schema:url">East and West </a> </p>
-            <p> <a href='books/evola/index.html'> <i>Julius Evola </i> </a> </p>
+            <p> <a href="books/julius-evola/east-and-west/index.html" property="schema:url">East and West </a> </p>
+            <p> <a href='books/julius-evola/index.html'> <i>Julius Evola </i> </a> </p>
             <div class="details">
                <p>198 Pages </p>
                <p>Philosophy </p>
                <p>Politics </p>
             </div>
          </li>
-         <li class=book> <a href="books/evola/the-yoga-of-power/index.html" tabindex="-1" property="schema:url">
+         <li class=book> <a href="books/julius-evola/the-yoga-of-power/index.html" tabindex="-1" property="schema:url">
                <picture>
-                  <source srcset="books/evola/the-yoga-of-power/cover.jpeg" type="image/jpg"> <img src=books/evola/the-yoga-of-power/cover.jpeg alt="">
+<source srcset="books/julius-evola/the-yoga-of-power/cover.avif" type="image/avif">
+                  <source srcset="books/julius-evola/the-yoga-of-power/cover.jpeg" type="image/jpg"> <img src=books/julius-evola/the-yoga-of-power/cover.jpeg alt="The Yoga of Power book's cover" loading="lazy" >
                </picture>
             </a>
-            <p> <a href="books/evola/the-yoga-of-power/index.html" property="schema:url">The Yoga of Power </a> </p>
-            <p> <a href='books/evola/index.html'> <i>Julius Evola </i> </a> </p>
+            <p> <a href="books/julius-evola/the-yoga-of-power/index.html" property="schema:url">The Yoga of Power </a> </p>
+            <p> <a href='books/julius-evola/index.html'> <i>Julius Evola </i> </a> </p>
             <div class="details">
                <p>256 Pages </p>
                <p>Philosophy </p>
                <p> Spirituality </p>
             </div>
          </li>
-         <li class=book> <a href="books/evola/men-among-the-ruins/index.html" tabindex="-1" property="schema:url">
+         <li class=book> <a href="books/julius-evola/men-among-the-ruins/index.html" tabindex="-1" property="schema:url">
                <picture>
-                  <source srcset="books/evola/men-among-the-ruins/cover.jpeg" type="image/jpg"> <img src=books/evola/men-among-the-ruins/cover.jpeg alt="">
+<source srcset="books/julius-evola/men-among-the-ruins/cover.avif" type="image/avif">
+                  <source srcset="books/julius-evola/men-among-the-ruins/cover.jpeg" type="image/jpg"> <img src=books/julius-evola/men-among-the-ruins/cover.jpeg alt="Men Among The Ruins book's cover" loading="lazy" >
                </picture>
             </a>
-            <p> <a href="books/evola/men-among-the-ruins/index.html" property="schema:url">Men Among The Ruins </a> </p>
-            <p> <a href='books/evola/index.html'> <i>Julius Evola </i> </a> </p>
+            <p> <a href="books/julius-evola/men-among-the-ruins/index.html" property="schema:url">Men Among The Ruins </a> </p>
+            <p> <a href='books/julius-evola/index.html'> <i>Julius Evola </i> </a> </p>
             <div class="details">
                <p>328 Pages </p>
                <p>Philosophy </p>
                <p>Politics </p>
             </div>
          </li>
-         <li class=book> <a href="books/evola/a-handbook-for-right-wing-youth/index.html" tabindex="-1" property="schema:url">
+         <li class=book> <a href="books/julius-evola/a-handbook-for-right-wing-youth/index.html" tabindex="-1" property="schema:url">
                <picture>
-                  <source srcset="books/evola/a-handbook-for-right-wing-youth/cover.jpeg" type="image/jpg"> <img src=books/evola/a-handbook-for-right-wing-youth/cover.jpeg alt=''>
+ <source srcset="books/julius-evola/a-handbook-for-right-wing-youth/cover.avif" type="image/avif">
+                  <source srcset="books/julius-evola/a-handbook-for-right-wing-youth/cover.jpeg" type="image/jpg"> <img src=books/julius-evola/a-handbook-for-right-wing-youth/cover.jpeg alt="A Handbook for Right Wing Youth book's cover" loading="lazy" >
                </picture>
             </a>
-            <p> <a href="books/evola/a-handbook-for-right-wing-youth/index.html" property="schema:url">A Handbook for Right Wing Youth </a> </p>
-            <p> <a href='books/evola/index.html'> <i>Julius Evola </i> </a> </p>
+            <p> <a href="books/julius-evola/a-handbook-for-right-wing-youth/index.html" property="schema:url">A Handbook for Right Wing Youth </a> </p>
+            <p> <a href='books/julius-evola/index.html'> <i>Julius Evola </i> </a> </p>
             <div class="details">
                <p>180 Pages </p>
                <p>Philosophy </p>
                <p>Politics </p>
             </div>
          </li>
-         <li class=book> <a href="books/evola/pagan-imperialism-and-metaphysics-of-war/index.html" tabindex="-1" property="schema:url">
+         <li class=book> <a href="books/julius-evola/pagan-imperialism-and-metaphysics-of-war/index.html" tabindex="-1" property="schema:url">
                <picture>
-                  <source srcset="books/evola/pagan-imperialism-and-metaphysics-of-war/cover.jpeg" type="image/jpg"> <img src=books/evola/pagan-imperialism-and-metaphysics-of-war/cover.jpeg alt=>
+               <source srcset="books/julius-evola/pagan-imperialism-and-metaphysics-of-war/cover.avif" type="image/avif">
+                  <source srcset="books/julius-evola/pagan-imperialism-and-metaphysics-of-war/cover.jpeg" type="image/jpg"> <img src=books/julius-evola/pagan-imperialism-and-metaphysics-of-war/cover.jpeg alt="Pagan Imperialism and Metaphysics of War book's cover" loading="lazy" >
                </picture>
             </a>
-            <p> <a href="books/evola/pagan-imperialism-and-metaphysics-of-war/index.html" property="schema:url">Pagan Imperialism and Metaphysics of War </a> </p>
-            <p> <a href="books/evola/index.html"> <i>Julius Evola </i> </a> </p>
+            <p> <a href="books/julius-evola/pagan-imperialism-and-metaphysics-of-war/index.html" property="schema:url">Pagan Imperialism and Metaphysics of War </a> </p>
+            <p> <a href="books/julius-evola/index.html"> <i>Julius Evola </i> </a> </p>
             <div class="details">
                <p>204 Pages </p>
                <p>Philosophy </p>
                <p>Politics </p>
             </div>
          </li>
-         <li class=book> <a href="books/dugin/political-platonism/index.html" tabindex="-1" property="schema:url">
+         <li class=book> <a href="books/alexander-dugin/political-platonism/index.html" tabindex="-1" property="schema:url">
                <picture>
-                  <source srcset="books/dugin/political-platonism/cover.jpeg" type="image/jpg"> <img src=books/dugin/political-platonism/cover.jpeg alt=>
+<source srcset="books/alexander-dugin/political-platonism/cover.avif" type="image/avif">
+                  <source srcset="books/alexander-dugin/political-platonism/cover.jpeg" type="image/jpg"> <img src=books/alexander-dugin/political-platonism/cover.jpeg alt="Political Platonism books'cover" loading="lazy" >
                </picture>
             </a>
             <p> <a href="books/political-platonism/index.html" property="schema:url">Political Platonism </a> </p>
-            <p> <a href=books/dugin/index.html> <i>Aleksandr Dugin </i> </a> </p>
+            <p> <a href=books/alexander-dugin/index.html> <i>Aleksandr Dugin </i> </a> </p>
             <div class="details">
                <p>152 Pages </p>
                <p>Philosophy </p>
@@ -184,40 +212,59 @@
       <ol id=authors>
          <li class=author> <a href="books/heidegger/index.html" tabindex="-1" property="schema:url">
                <picture>
-                  <source srcset="imgs/heidegger1.jpg" type="image/jpg"> <img src="imgs/heidegger1.jpg" alt="">
+<source srcset="imgs/heidegger1.avif" type="image/avif">
+                  <source srcset="books/heidegger/heidegger1.jpg" type="image/jpg"> <img src="books/heidegger/heidegger1.jpg" alt="" loading="lazy" >
                </picture>
             </a>
             <p> <a href="books/heidegger/index.html" property="schema:url"> <i>Martin Heidegger </i> </a> </p>
          </li>
          <li class=author> <a href="books/guenon/index.html" tabindex="-1" property="schema:url">
                <picture>
-                  <source srcset="imgs/guenon.webp" type="image/webp"> <img src="imgs/guenon.webp" alt="" style=height:365px;width:225px>
+                <source srcset="books/guenon/guenon.avif" type="image/avif">
+                  <source srcset="books/guenon/guenon.webp" type="image/webp"> <img src="books/guenon/guenon.webp" alt="" loading="lazy" >
                </picture>
             </a>
             <p> <a href="books/guenon/index.html" property="schema:url"> <i>René Guénon </i> </a> </p>
          </li>
-         <li class=author> <a href="books/dugin/index.html" tabindex="-1" property="schema:url">
+         <li class=author> <a href="books/alexander-dugin/index.html" tabindex="-1" property="schema:url">
                <picture>
-                  <source srcset="imgs/dugin.jpeg" type="image/jpg"> <img src="imgs/dugin.jpeg" alt="">
+<source srcset="books/alexander-dugin/alexander-dugin.avif" type="image/avif">
+                  <source srcset="books/alexander-dugin/alexander-dugin.jpeg" type="image/jpg"> <img src="imgs/alexander-dugin.jpeg" alt="" loading="lazy" >
                </picture>
             </a>
-            <p> <a href="books/dugin/index.html" property="schema:url"> <i>Aleksandr Dugin </i> </a> </p>
+            <p> <a href="books/alexander-dugin/index.html" property="schema:url"> <i>Aleksandr Dugin </i> </a> </p>
          </li>
-         <li class=author> <a href="books/evola/index.html" tabindex="-1" property="schema:url">
+         <li class=author> <a href="books/julius-evola/index.html" tabindex="-1" property="schema:url">
                <picture>
-                  <source srcset="imgs/evola.jpeg" type="image/jpg"> <img src="imgs/evola.jpeg" alt="">
+<source srcset="books/julius-evola/julius-evola.avif" type="image/avif">
+                  <source srcset="books/julius-evola/julius-evola.jpeg" type="image/jpg"> <img src="imgs/julius-evola.jpeg" alt="" loading="lazy" >
                </picture>
             </a>
-            <p> <a href="books/evola/index.html" property="schema:url"> <i>Julius Evola </i> </a> </p>
+            <p> <a href="books/julius-evola/index.html" property="schema:url"> <i>Julius Evola </i> </a> </p>
          </li>
          <li class=author> <a href="books/nietzsche/index.html" tabindex="-1" property="schema:url">
                <picture>
-                  <source srcset="imgs/nietzsche.jpeg" type="image/jpg"> <img src="imgs/nietzsche.jpeg" alt="">
+               <source srcset="books/nietzsche/nietzsche.avif" type="image/avif">
+                  <source srcset="books/nietzsche/nietzsche.jpeg" type="image/jpg"> <img src="imgs/nietzsche.jpeg" alt="" loading="lazy" >
                </picture>
             </a>
             <p> <a href="books/nietzsche/index.html" property="schema:url"> <i>Friedrich Nietzsche </i> </a> </p>
          </li>
       </ol>
-   </main>
+      </main>
+<footer>
+		<p><a href="/newsletter">Subscribe to our free newsletter</a></p>
+				<a href="/ebooks">Ebooks</a> |
+				<a href="/about">About</a> |
+				<a href="/contribute">Get Involved</a> |
+				<a href="/donate">Donate</a> |
+				<a href="/settings">Settings</a> |
+				<a href="https://github.com/standardebooks">GitHub</a> |
+				<a href="/bulk-downloads">Bulk downloads</a> |
+				<a href="/feeds">Ebook Feeds  </a>
+		<p>Content produced by or for Standard Ebooks L<sup>3</sup>C is dedicated to the <a href="https://en.wikipedia.org/wiki/Public_domain">public domain</a> via the <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal Public Domain Dedication</a>.</p>
+		<p>Content not produced by or for Standard Ebooks L<sup>3</sup>C but displayed on this website may be subject to copyright.</p>
+		<p><a href="/">Standard Ebooks</a></p>
+	</footer>
 </body>
 </html>
