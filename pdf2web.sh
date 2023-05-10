@@ -16,7 +16,13 @@ fi
 # TODO: find something simpler to extract them.
 
 metadata() {
-EBOOK="$(find books -type f \( -name *.pdf -name *.epub \) | $menu)"
+EBOOK="$(find books -type f \( -name *.pdf -o -name *.epub \) | $menu)"
+if [ "${EBOOK##*.}" = epub ]; then
+
+elif ["${EBOOK##*.}" = pdf ]; then
+
+fi
+ebook-convert "$BOOK" $
 TITLE="$(exiftool -Title '$EBOOK')"
 EBOOK_DIR=$( echo "${TITLE#*:}" | tr -d '[:punct:]' | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | sed 's/-\+/-/g;s/\(^-\|-\$\)//g')
 AUTHOR="$(exiftool -Author "$EBOOK")"

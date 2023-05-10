@@ -1,22 +1,5 @@
-select,
-input[type="text"],
-input[type="month"],
-input[type="email"],
-input[type="search"]{
-	box-shadow: 1px 1px 0 rgba(0, 0, 0, .5) inset;
-	background: rgba(0, 0, 0, .1);
-}
+body {color:#DDD;background:#111211;}
+.details p{background:#282828;border:1px solid #000}
+input[type="text"],#table-of-contents,.details p{background:#191919}
+input[type="text"],.book img,.author img,#table-of-contents,.details p{border:1px solid #000}
 
-input::placeholder{
-	color: rgba(255, 255, 255, .75);
-}
-
-ol.ebooks-list img:hover{
-	box-shadow: 3px 3px 1px rgba(0, 0, 0, .5);
-}
-h1,h2,h3,h4,h5,h6{
-	text-shadow: 2px 2px 0 rgba(0, 0, 0, .75);
-}
-body {color:#fff;background:#2c3035;}
-hr{border-bottom:3px double #aaa;}
-.details p{background: rgba(0, 0, 0, .1);border:1px solid #000}
