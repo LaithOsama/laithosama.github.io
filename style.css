@@ -22,7 +22,7 @@ font-face {
 }
 
 body {
-    font: 100%/1.4/1.5em 'Crimson Pro','Times New Roman','Times Roman',Times;
+    font: 100% 'Crimson Pro','Times New Roman','Times Roman',Times;
     color: #5a5136;
     background: #e1d8b4;
     margin: 0;
@@ -58,7 +58,7 @@ nav a {
     color: #fff;
     padding: 6px 20px 0;
     float: right;
-    background: url(images/nav.png)50%0 no-repeat
+    background: url(images/nav.png) 50% 0 no-repeat
 }
 
 article {
@@ -85,7 +85,7 @@ hr {
 
 input[type=text] {
     width: 50%;
-    padding: 1.5rem
+    padding: 1.5em
 }
 
 footer {
@@ -137,7 +137,7 @@ footer p {
 }
 
 .author img,.book img,.details p,input[type=text] {
-    border-radius: .3rem
+    border-radius: .3em
 }
 
 .author,.book,.details,footer,h1,h2 {
@@ -153,12 +153,12 @@ footer p {
 }
 
 .book,article p,h1,h2,li {
-    padding-top: .5rem;
-    padding-bottom: .5rem
+    padding-top: .5em;
+    padding-bottom: .5em
 }
 
 h1,h2,hr,input[type=text] {
-    margin: 2rem
+    margin: 2em
 }
 
 .book a,nav a {
@@ -169,7 +169,7 @@ h1,h2,hr,input[type=text] {
     article {
         max-width: none;
         margin-left: 1em;
-        right: 1em
+        margin-right: 1em
     }
 
     #authors,#ebooks {
