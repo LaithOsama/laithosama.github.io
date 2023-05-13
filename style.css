@@ -25,7 +25,7 @@
 }
 
 body {
-    font: 1.2/1.4em 'Crimson Pro','Times New Roman','Times Roman',Times;
+    font: 1.2/1.4em /*'Crimson Pro',*/'Times New Roman','Times Roman',Times;
     color: #5a5136;
     background: #e1d8b4;
     margin: 0;
