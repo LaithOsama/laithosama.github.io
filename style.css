@@ -6,13 +6,15 @@ font-face {
 @font-face {
     font-family:"Crimson Pro";
     src:url(fonts/crimson-pro.woff2)format(woff2);
-    font-weight:400;font-style:normal
+    font-weight:400;
+    font-style:normal
 }
 
 @font-face {
     font-family:"Crimson Pro";
     src:url(fonts/crimson-pro-bold.woff2)format(woff2);
-    font-weight:700;font-style:normal
+    font-weight:700;
+    font-style:normal
 }
 
 @font-face {
@@ -22,7 +24,7 @@ font-face {
 }
 
 body {
-    font: 100% 'Crimson Pro','Times New Roman','Times Roman',Times;
+    font: 1.2/1.4em 'Crimson Pro','Times New Roman','Times Roman',Times;
     color: #5a5136;
     background: #e1d8b4;
     margin: 0;
@@ -152,13 +154,9 @@ footer p {
     border: #777 solid 1px
 }
 
-.book,article p,h1,h2,li {
-    padding-top: .5em;
-    padding-bottom: .5em
-}
-
-h1,h2,hr,input[type=text] {
-    margin: 2em
+.book,article p,li {
+    padding-top: .75em;
+    padding-bottom: .75em
 }
 
 .book a,nav a {
