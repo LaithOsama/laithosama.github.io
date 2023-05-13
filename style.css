@@ -5,13 +5,21 @@
 
 
 body {
-    font: 1.2/1.4em 'Times New Roman','Times Roman',Times;
+    font: .88em 'Times New Roman','Times Roman',Times;
     color: #5a5136;
     background: #e1d8b4;
     margin: 0;
     padding: 0;
-    width:100%
+}
+
+main {
     box-sizing:border-box
+    hyphens: auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.6;
 }
 
 header {
