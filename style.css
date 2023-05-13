@@ -91,23 +91,19 @@ input[type=text] {
     padding: 1.5em
 }
 
-footer {
-    padding-bottom: 2em
-}
-
 footer a {
-    margin-left: .75em;
-    margin-right: .75em
+    margin-right:.75em;
+    margin-left:.75em
 }
 
 footer p {
-    font-size:.8em
+    font-size:small
 }
 
 #authors,#ebooks {
     display: grid;
     grid-template-columns: repeat(4,minmax(0,1fr));
-    gap: 4rem;
+    gap: 6em;
     list-style: none
 }
 
@@ -153,11 +149,6 @@ footer p {
 
 #table-of-contents,.author img,.book img,.details p,input[type=text] {
     border: #777 solid 1px
-}
-
-.book,article p,li {
-    padding-top: .75em;
-    padding-bottom: .75em
 }
 
 .book a,nav a {
