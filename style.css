@@ -10,14 +10,12 @@ body {
     background: #e1d8b4;
     margin: 0;
     padding: 0;
+    -webkit-text-size-adjust: 100%;
 }
 
 main {
     box-sizing:border-box
     hyphens: auto;
-    padding: 0 2rem;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     line-height: 1.6;
 }
