@@ -1,10 +1,5 @@
-@font-face {
-  font-family: 'Cloister Black';
-  src: url('fonts/cloisterblack.woff') format('woff');
-}
-
 body {
-  font-family: 'Times New Roman', Georgia, serif;
+  font: 100% 'Times New Roman', Georgia, serif;
   color: #5a5136;
   background: #e1d8b4;
   margin: 0;
@@ -31,7 +26,7 @@ header h1 {
 }
 
 nav {
-  height: 33px;
+  height: 32px;
   background: #000;
   border-bottom: 5px solid #222;
 }
@@ -54,14 +49,12 @@ article {
 
 h1 {
   font: 52px 'Cloister Black';
-}
-
+}  
+  
+main > h1, h2 {border-bottom: 3px double #aaa;margin: .75em;padding-bottom: 1em;}
 h2 {
   font: 36px 'Cloister Black';
-}
-
-hr {
-  border-top: 4px double;
+  border-bottom: 3px double #aaa;
   margin: 2em;
 }
 
@@ -95,11 +88,17 @@ footer p {
   margin: 3px;
 }
 
-#cover {
+#cover img {
   float: left;
   width: 324px;
   height: 526;
   margin: 1em;
+}
+
+#cover {
+  margin-top:2em;
+  display:flex;
+  font-size:24px;
 }
 
 .author img,
@@ -122,8 +121,8 @@ footer p {
 .details p {
   padding: 3px;
 }
-
 #cover,
+#cover img,
 #table-of-contents,
 .author img,
 .book img,
@@ -143,6 +142,7 @@ h2 {
   text-align: center;
 }
 
+#cover,
 #table-of-contents,
 .details p,
 input[type="text"] {
@@ -161,26 +161,25 @@ nav a {
 }
 
 #preface {
-  display:flex;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   body {
     font-size:12px;
   }
 
   article {
     max-width: 100%;
-    padding: 1em;
+    padding: .5em;
+  }
+  .book img,
+  .author img,
+  #cover img {
+    max-width: 80%;
   }
 
   #cover {
-    width: 126px;
-    height: 235px;
-  }
-
-  #preface {
-    display:block;
+    font-size:12px
   }
 
   h1 {
