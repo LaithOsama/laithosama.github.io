@@ -9,7 +9,7 @@ body {
   background: #e1d8b4;
   margin: 0;
   padding: 0;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 header {
@@ -151,8 +151,13 @@ input[type="text"] {
 
 .book a,
 .author a,
+#table-of-contents a,
 nav a {
   text-decoration: none;
+}
+
+#table-of-contents {
+  padding:3em;
 }
 
 #preface {
@@ -179,11 +184,11 @@ nav a {
   }
 
   h1 {
-  font: 36px 'serif';
+  font: 32px serif;
   }
 
   h2 {
-  font: 24px 'serif';
+  font: 18px serif;
   }
 }
 
