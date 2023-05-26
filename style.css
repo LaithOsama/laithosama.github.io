@@ -99,7 +99,7 @@ footer p {
   float: left;
   width: 324px;
   height: 526;
-  margin: 2em;
+  margin: 1em;
 }
 
 .author img,
@@ -136,6 +136,7 @@ input[type="text"] {
 .author,
 .book,
 .details,
+#preface,
 footer,
 h1,
 h2 {
@@ -169,15 +170,20 @@ nav a {
   }
 
   #cover {
-    width: 226px;
-    height: 335px;
+    width: 126px;
+    height: 235px;
   }
+
+  #preface {
+    display:block;
+  }
+
   h1 {
-  font: 36px 'Cloister Black';
+  font: 36px 'serif';
   }
 
   h2 {
-  font: 24px 'Cloister Black';
+  font: 24px 'serif';
   }
 }
 
