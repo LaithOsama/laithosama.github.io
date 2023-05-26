@@ -145,7 +145,7 @@ h2 {
 #table-of-contents,
 .details p,
 input[type="text"] {
-  background: #f2f2f2;
+  background:#0000000d;
 }
 
 .book a,
@@ -154,9 +154,13 @@ nav a {
   text-decoration: none;
 }
 
+#preface {
+  display:flex;
+}
+
 @media only screen and (max-width: 700px) {
   body {
-  font-size:12px;
+    font-size:12px;
   }
 
   article {
@@ -164,24 +168,16 @@ nav a {
     padding: 1em;
   }
 
-  #authors,
-  #ebooks {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1em;
+  #cover {
+    width: 226px;
+    height: 335px;
+  }
+  h1 {
+  font: 36px 'Cloister Black';
   }
 
-.author img,
-.book img {
-  width: 155px;
-  height: 232px;
-}
-
-
-
-  #cover {
-    width: 100%;
-    max-width: 226px;
-    height: 335px;
+  h2 {
+  font: 24px 'Cloister Black';
   }
 }
 
