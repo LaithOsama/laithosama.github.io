@@ -19,7 +19,7 @@ header img {
   float: left;
 }
 
-header h1 {
+header a{
   position: absolute;
   left: 128px;
   bottom: 0;
@@ -47,11 +47,16 @@ article {
   margin: 0 auto;
 }
 
+header a {
+  font: 52px 'Cloister Black';
+}
+
 h1 {
   font: 52px 'Cloister Black';
 }  
   
-main > h1, h2 {border-bottom: 3px double #aaa;margin: .75em;padding-bottom: 1em;}
+h1, h2 {border-bottom: 3px double #aaa;margin: .75em;padding-bottom: 1em;}
+footer {border-top: 3px double #aaa; margin: 1em;padding-top:1em}
 h2 {
   font: 36px 'Cloister Black';
   border-bottom: 3px double #aaa;
@@ -149,6 +154,7 @@ input[type="text"] {
   background:#0000000d;
 }
 
+header a,
 .book a,
 .author a,
 #table-of-contents a,
@@ -175,11 +181,12 @@ nav a {
   .book img,
   .author img,
   #cover img {
-    max-width: 80%;
+    max-width: 90%;
+    height:auto
   }
 
   #cover {
-    font-size:12px
+    font-size:10px
   }
 
   h1 {
