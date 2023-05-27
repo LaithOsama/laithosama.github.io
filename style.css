@@ -1,3 +1,9 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   font: 100% 'Times New Roman', Georgia, serif;
   color: #5a5136;
@@ -23,6 +29,7 @@ header a{
   position: absolute;
   left: 128px;
   bottom: 0;
+  
 }
 
 nav {
@@ -47,11 +54,7 @@ article {
   margin: 0 auto;
 }
 
-header a {
-  font: 52px 'Cloister Black';
-}
-
-h1 {
+h1, header a {
   font: 52px 'Cloister Black';
 }  
   
@@ -186,10 +189,10 @@ nav a {
   }
 
   #cover {
-    font-size:10px
+    font-size:11px
   }
 
-  h1 {
+  h1, header a {
   font: 32px serif;
   }
 
