@@ -1,5 +1,8 @@
+@font-face {font-family: 'KFGQPC Uthman Taha Naskh'; src: url('fonts/uthman-taha-naskh.woff2'); unicode-range:U+A,U+20,U+21,U+28,U+29,U+2C-2E,U+41-47,U+623,U+624,U+626-
+63A,U+641-64B,U+64E}
+
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
-body{font:100%/1.6 'Times New Roman',Georgia,serif;color:#5a5136;background:#e1d8b4;margin:0;padding:0}
+body{font:1.2em 'Cardo','Times New Roman',Georgia,serif;color:#5a5136;background:#e1d8b4;margin:0;padding:0}
 header{color:#eee;background:#600;height:128px;position:relative}
 header img{height:128px;float:left}
 header a{position:absolute;bottom:0}
@@ -27,7 +30,7 @@ footer p{font-size:small}
 #table-of-contents,.details p,input[type="text"]{background:#0000000d}
 header a,.book a,.author a,#table-of-contents a,nav a{text-decoration:none}
 #table-of-contents{padding:3em}
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
 body{font-size:12px}
 article{max-width:100%;padding:.5em}
 .book img,.author img,#cover img{max-width:90%;height:auto}
