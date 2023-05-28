@@ -1,203 +1,38 @@
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  font: 100% 'Times New Roman', Georgia, serif;
-  color: #5a5136;
-  background: #e1d8b4;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-
-header {
-  color: #eee;
-  background: #600;
-  height: 128px;
-  position: relative;
-}
-
-header img {
-  height: 128px;
-  float: left;
-}
-
-header a{
-  position: absolute;
-  left: 128px;
-  bottom: 0;
-  
-}
-
-nav {
-  height: 32px;
-  background: #000;
-  border-bottom: 5px solid #222;
-}
-
-nav a {
-  color: #fff;
-  padding: 6px 20px 0;
-  float: right;
-  background: url(images/nav.png) center top no-repeat;
-}
-
-a {
-  color:inherit;
-}
-
-article {
-  max-width: 75%;
-  margin: 0 auto;
-}
-
-h1, header a {
-  font: 52px 'Cloister Black';
-}  
-  
-h1, h2 {border-bottom: 3px double #aaa;margin: .75em;padding-bottom: 1em;}
-footer {border-top: 3px double #aaa; margin: 1em;padding-top:1em}
-h2 {
-  font: 36px 'Cloister Black';
-  border-bottom: 3px double #aaa;
-  margin: 2em;
-}
-
-input[type="text"] {
-  width: 50%;
-  padding: 1.5em;
-  margin-bottom:3em;
-  font:inherit
-}
-
-footer a {
-  margin-left:.5em;
-  margin-right:.5em;
-}
-
-footer p {
-  font-size: small;
-}
-
-#authors,
-#ebooks {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 6em;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.book p {
-  margin: 3px;
-}
-
-#cover img {
-  float: left;
-  width: 324px;
-  height: 526;
-  margin: 1em;
-}
-
-#cover {
-  margin-top:2em;
-  display:flex;
-  font-size:24px;
-}
-
-.author img,
-.book img {
-  width: 224px;
-  height: 326px;
-}
-
-.book img:hover {
-  transform: scale(1.05);
-  box-shadow: 3px 3px 1px #00000042;
-  transition: all 200ms ease;
-}
-
-.details {
-  display: flex;
-  justify-content: center;
-}
-
-.details p {
-  padding: 3px;
-}
-#cover,
-#cover img,
-#table-of-contents,
-.author img,
-.book img,
-.details p,
-input[type="text"] {
-  border-radius: 0.3em;
-  border: #000 solid 1px;
-}
-
-.author,
-.book,
-.details,
-#preface,
-footer,
-h1,
-h2 {
-  text-align: center;
-}
-
-#cover,
-#table-of-contents,
-.details p,
-input[type="text"] {
-  background:#0000000d;
-}
-
-header a,
-.book a,
-.author a,
-#table-of-contents a,
-nav a {
-  text-decoration: none;
-}
-
-#table-of-contents {
-  padding:3em;
-}
-
-#preface {
-}
-
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+body{font:100%/1.6 'Times New Roman',Georgia,serif;color:#5a5136;background:#e1d8b4;margin:0;padding:0}
+header{color:#eee;background:#600;height:128px;position:relative}
+header img{height:128px;float:left}
+header a{position:absolute;bottom:0}
+nav{height:33px;background:#000;border-bottom:5px solid #222}
+nav a{color:#fff;padding:6px 20px 0;float:right;background:url(images/nav.png) center top no-repeat}
+a{color:inherit}
+article{max-width:75%;margin:0 auto}
+h1,header a{font:52px 'Cloister Black'}
+h1,h2{border-bottom:3px double #aaa;margin:.75em;padding-bottom:1em}
+footer{border-top:3px double #aaa;margin:1em;padding-top:1em}
+h2{font:36px 'Cloister Black';border-bottom:3px double #aaa;margin:2em}
+input{width:50%;padding:1.5em;margin-bottom:3em;font:inherit}
+footer a{margin-left:.5em;margin-right:.5em}
+footer p{font-size:small}
+#authors,#ebooks{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:6em;margin:0;padding:0;list-style:none}
+.book p{margin:3px}
+#cover img{float:left;width:324px;height:526px;margin:.75em}
+#cover{margin-top:2em;display:flex}
+.author img,.book img{width:224px;height:326px}
+.book img:hover{transform:scale(1.05);box-shadow:3px 3px 1px #00000042;transition:all 200ms ease}
+.details{display:flex;justify-content:center}
+.details p{padding:3px}
+#cover img,#table-of-contents,.author img,.book img,.details p,input{border-radius:.3em;border:#222 solid 1px}
+.author,.book,.details,footer,h1,h2{text-align:center}
+#table-of-contents,.details p,input[type="text"]{background:#0000000d}
+header a,.book a,.author a,#table-of-contents a,nav a{text-decoration:none}
+#table-of-contents{padding:3em}
 @media only screen and (max-width: 900px) {
-  body {
-    font-size:12px;
-  }
-
-  article {
-    max-width: 100%;
-    padding: .5em;
-  }
-  .book img,
-  .author img,
-  #cover img {
-    max-width: 90%;
-    height:auto
-  }
-
-  #cover {
-    font-size:11px
-  }
-
-  h1, header a {
-  font: 32px serif;
-  }
-
-  h2 {
-  font: 18px serif;
-  }
+body{font-size:12px}
+article{max-width:100%;padding:.5em}
+.book img,.author img,#cover img{max-width:90%;height:auto}
+h1,header a{font:32px serif}
+h2{font:18px serif}
+#cover p{font-size:11px}
 }
 
