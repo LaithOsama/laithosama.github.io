@@ -1,4 +1,5 @@
 body {color:#999999;background:#111211}
-input,#cover img,#table-of-contents,.details p{background:#191919}
-input,#cover img,.book img,.author img,#table-of-contents,.details p{border:#000 solid 1px}
+h1,h2{border-bottom:3px double #aaa}
+input[type=text],#cover img,#table-of-contents,.details p{background:#191919}
+input[type=text],#cover img,.book img,.author img,#table-of-contents,.details p{border:#000 solid 1px}
 
