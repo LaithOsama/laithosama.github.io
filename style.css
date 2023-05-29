@@ -1,8 +1,31 @@
-@font-face {font-family: 'KFGQPC Uthman Taha Naskh'; src: url('fonts/uthman-taha-naskh.woff2'); unicode-range:U+A,U+20,U+21,U+28,U+29,U+2C-2E,U+41-47,U+623,U+624,U+626-
+@font-face {font-family: 'KFGQPC Uthman Taha Naskh'; src: local('fonts/uthman-taha-naskh.woff2'); unicode-range:U+A,U+20,U+21,U+28,U+29,U+2C-2E,U+41-47,U+623,U+624,U+626-
 63A,U+641-64B,U+64E}
-
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(font/cardo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Cardo';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local(fonts/cardo-italic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(fonts/cardo-bold.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
-body{font:1.2em 'Cardo','Times New Roman',Georgia,serif;color:#5a5136;background:#e1d8b4;margin:0;padding:0}
+body{font:100% 'Cardo','Times New Roman',Georgia,serif;color:#5a5136;background:#e1d8b4;margin:0;padding:0}
 header{color:#eee;background:#600;height:128px;position:relative}
 header img{height:128px;float:left}
 header a{position:absolute;bottom:0}
@@ -13,7 +36,6 @@ article{max-width:75%;margin:0 auto}
 h1,header a{font:52px 'Cloister Black'}
 h1,h2{border-bottom:3px double #aaa;margin:.75em;padding-bottom:1em}
 footer{border-top:3px double #aaa;margin:1em;padding-top:1em}
-h2{font:36px 'Cloister Black';border-bottom:3px double #aaa;margin:2em}
 input{width:50%;padding:1.5em;margin-bottom:3em;font:inherit}
 footer a{margin-left:.5em;margin-right:.5em}
 footer p{font-size:small}
@@ -31,11 +53,9 @@ footer p{font-size:small}
 header a,.book a,.author a,#table-of-contents a,nav a{text-decoration:none}
 #table-of-contents{padding:3em}
 @media only screen and (max-width: 768px) {
-body{font-size:12px}
 article{max-width:100%;padding:.5em}
 .book img,.author img,#cover img{max-width:90%;height:auto}
-h1,header a{font:32px serif}
-h2{font:18px serif}
-#cover p{font-size:11px}
+body{font:100% system-ui,'-apple-system','Segoe UI',Roboto,'Helvetica Neue',Helvetica,Arial,'Noto Sans','Liberation Sans',sans-serif}
+h1, h2, h3, h4 { -webkit-font-smoothing: antialiased; font-family: Financier Display,Times New Roman,times,serif; font-weight: 500; text-rendering: optimizeLegibility; }
 }
 
