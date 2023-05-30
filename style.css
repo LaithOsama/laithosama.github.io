@@ -4,14 +4,16 @@ src:url(fonts/uthman-taha-naskh.woff2);
 unicode-range:U+A,U+20,U+21,U+28,U+29,U+2C-2E,U+41-47,U+623,U+624,U+626-63A,U+641-64B,U+64E
 }
 
+@font-face {
+font-family:'Cloister Black';
+src:url(fonts/cloisterblack.woff)
+}
+
 body {
 color:#5a5136;
 background-color:#e1d8b4;
-font:100% "Crimson Pro",'Times New Roman',serif;
-margin:0;
-padding:0;
-text-size-adjust:100%;
-hyphens:auto
+font:18px 'Times New Roman',serif;
+margin:0
 }
 
 main[dir='rtl'],article[dir='rtl'] {
@@ -36,7 +38,7 @@ bottom:0
 }
 
 nav {
-height:33px;
+height:29px;
 background-color:#000;
 border-bottom:5px solid #222
 }
@@ -67,7 +69,6 @@ main[dir=ltr] h1,article[dir=ltr] h1,header a {
 font:52px 'Cloister Black'
 }
 
-
 footer {
 border-top:3px double;
 margin:1em;
@@ -90,7 +91,7 @@ font-size:small
 }
 
 .book p {
-margin:2px
+margin:3px
 }
 
 .author img,.book img {
@@ -99,12 +100,14 @@ height:326px;
 }
 
 .details p {
-padding:2px
+padding:3px
 }
 
-#table-of-contents,.author img,.book img,.details p,input[type=text],#book-info img,#book-details {
-border-radius:5px
+#table-of-contents,.author img,.book img,.details p,input[type=text] {
+border-radius:5px;
+border: #777 solid 1px
 }
+#book-info img,#book-details {border-radius:5px}
 
 .author,.book,.details,footer,h1,h2 {
 text-align:center
@@ -125,6 +128,12 @@ padding:3em
 #authors,#ebooks {
 margin:0;
 padding:0;
+}
+
+.book img:hover {
+transform:scale(1.05);
+box-shadow:3px 3px 1px #00000042;
+transition:all 200ms ease
 }
 
 .author,.book {
@@ -155,7 +164,7 @@ height:526px
 
 #book-details {
 background-color:#f5f2e7;
-padding:15px
+padding:20px
 }
 
 #book-info img,#book-details  {
@@ -180,11 +189,8 @@ width: 100%
 #book-table {
 border-spacing:5px
 }
-}
-@media(prefers-reduced-motion: no-preference){
-.book img:hover {
-transform:scale(1.05);
-box-shadow:3px 3px 1px #00000042;
-transition:all 200ms ease
+#book-details { 
+font:10px serif;
+padding:10px
 }
 }
