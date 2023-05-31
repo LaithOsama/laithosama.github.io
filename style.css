@@ -4,7 +4,7 @@
 @font-face{font-display:swap;font-family:"Crimson Pro";font-style:normal;font-weight:700;src:url(fonts/crimson-pro-bold.woff2) format("woff2")}
 @font-face{font-display:swap;font-family:"Crimson Pro";font-style:italic;font-weight:400;src:url(fonts/crimson-pro-italic.woff2) format("woff2")}
 #authors,#ebooks{margin:0;padding:0}
-#book-details{background-color:#f5f2e7;padding:20px}
+#book-details{padding:20px}
 #book-details-cell{display:table-cell;vertical-align:top}
 #book-info img{height:526px;width:324px}
 #book-info img,#book-details{border-radius:5px}
@@ -13,7 +13,7 @@
 #ebooks > li > p:nth-of-type(1) > a{font-weight:700}
 #table-of-contents{padding:3em}
 #table-of-contents,.author img,.book img,input[type=text]{border:#222 solid 1px;border-radius:5px}
-#table-of-contents,input[type="text"]{background-color:#0000000d}
+#table-of-contents,#book-details,input[type="text"]{background-color:#0000000d}
 .author img,.book img{height:326px;width:224px}
 .author,.book{display:inline-block;margin-bottom:4em;width:32%}
 .book p{margin:3px}
@@ -31,18 +31,18 @@ header{background-color:#600;color:#eee;height:128px;position:relative}
 header a{bottom:0;position:absolute}
 header a,.book a,.author a,#table-of-contents a,nav a{text-decoration:none}
 header img{float:left;height:128px}
-input[type='text']{font:inherit;margin-bottom:3em;padding:1.5em;width:65%}
+input[type='text']{margin-bottom:3em;padding:2em;width:65%}
 main[dir='rtl'],article[dir='rtl']{font:1.2em 'KFGQPC Uthman Taha Naskh'}
 main[dir=ltr] h1,article[dir=ltr] h1,header a{font:52px 'Cloister Black'}
 nav{background-color:#000;border-bottom:5px solid #222;height:36px}
 nav a{background:url(images/nav.png) center top no-repeat;color:#fff;float:right;padding:6px 20px 0}
 @media only screen and (max-width: 480px) {
+body {font-size:.88em}
 #book-details{font:10px serif;padding:10px}
 #book-table{border-spacing:5px}
 .author,.book{width:100%}
 .book img,.author img,#book-info img{height:auto;max-width:100%}
 article{max-width:100%;padding:.5em}
-nav a{font-size:14px}
 }
 @media(prefers-reduced-motion: no-preference) {
 .book img:hover{box-shadow:3px 3px 1px #00000042;transform:scale(1.05);transition:all 200ms ease}
