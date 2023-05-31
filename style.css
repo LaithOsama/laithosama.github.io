@@ -42,7 +42,7 @@ nav a{background:url(images/nav.png) center top no-repeat;color:#fff;float:right
 .author,.book{width:100%}
 .book img,.author img,#book-info img{height:auto;max-width:100%}
 article{max-width:100%;padding:.5em}
-body{font-size:12px}
+nav a{font-size:14px}
 }
 @media(prefers-reduced-motion: no-preference) {
 .book img:hover{box-shadow:3px 3px 1px #00000042;transform:scale(1.05);transition:all 200ms ease}
