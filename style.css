@@ -1,230 +1,50 @@
-@font-face {
-font-family:'KFGQPC Uthman Taha Naskh';
-src:url(fonts/uthman-taha-naskh.woff2);
-unicode-range:U+A,U+20,U+21,U+28,U+29,U+2C-2E,U+41-47,U+623,U+624,U+626-63A,U+641-64B,U+64E
-}
-
-@font-face {
-font-family:'Cloister Black';
-src:url(fonts/cloisterblack.woff)
-}
-@font-face {
-font-family:'Financier Display';
-src:url(fonts/financierdisplay-medium.woff2)
-}
-@font-face{
-	font-family: "Crimson Pro";
-	src: url("fonts/crimson-pro.woff2") format("woff2");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face{
-	font-family: "Crimson Pro";
-	src: url("fonts/crimson-pro-bold.woff2") format("woff2");
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face{
-	font-family: "Crimson Pro";
-	src: url("fonts/crimson-pro-italic.woff2") format("woff2");
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
-}
-
-body {
-color:#222;
-background-color:#e9e7e0;
-font:18px 'Crimson Pro','Times New Roman',serif;
-margin:0
-}
-
-main[dir='rtl'],article[dir='rtl'] {
-font:1.2em 'KFGQPC Uthman Taha Naskh'
-}
-
-header {
-color:#eee;
-background-color:#600;
-height:128px;
-position:relative
-}
-
-header img {
-height:128px;
-float:left
-}
-
-header a {
-position:absolute;
-bottom:0
-}
-
-nav {
-height:29px;
-background-color:#000;
-border-bottom:5px solid #222
-}
-
-nav a {
-color:#fff;
-padding:6px 20px 0;
-float:right;
-background:url(images/nav.png) center top no-repeat
-}
-
-a {
-color:inherit
-}
-
-article {
-max-width:75%;
-margin:0 auto
-}
-
-h1,h2 {
-border-bottom:3px double;
-margin:.75em;
-padding-bottom:1em
-}
-
-main[dir=ltr] h1,article[dir=ltr] h1,header a {
-font:52px 'Cloister Black'
-}
-
-footer {
-border-top:3px double;
-margin:1em;
-padding-top:1em
-}
-
-input[type='text'] {
-width:75%;
-padding:1.5em;
-margin-bottom:3em;
-font:inherit
-}
-
-footer a {
-margin:0 .5em
-}
-
-footer p {
-font-size:small
-}
-
-.book p {
-margin:3px
-}
-
-.author img,.book img {
-width:224px;
-height:326px;
-}
-
-.details p {
-padding:3px
-}
-
-#table-of-contents,.author img,.book img,.details p,input[type=text] {
-border-radius:5px;
-border: #777 solid 1px
-}
-#book-info img,#book-details {border-radius:5px}
-
-div.search,.author,.book,.details,footer,h1,h2 {
-text-align:center
-}
-
-#table-of-contents,.details p,input[type="text"] {
-background-color:#0000000d
-}
-
-header a,.book a,.author a,#table-of-contents a,nav a {
-text-decoration:none
-}
-
-#table-of-contents {
-padding:3em
-}
-
-#authors,#ebooks {
-margin:0;
-padding:0;
-}
-
-.author,.book {
-display:inline-block;
-width:32%;
-margin-bottom:4em
-}
-
-.details {
-display:flex;
-justify-content:center
-}
-
-#book-table {
-display:table;
-border-spacing:15px
-}
-
-#book-details-cell {
-display:table-cell;
-vertical-align:top
-}
-
-#book-info img {
-width:324px;
-height:526px
-}
-
-.book-author {
-font-style: italic
-}
-
-#book-details {
-background-color:#f5f2e7;
-padding:20px
-}
-
-#book-info img,#book-details  {
-box-shadow:0 0 5px rgba(0,0,0,0.3)
-}
-
-@media only screen and (max-width: 768px) {
+@font-face{font-display:swap;font-family:'KFGQPC Uthman Taha Naskh';src:url(fonts/uthman-taha-naskh.woff2);unicode-range:U+A,U+20,U+21,U+28,U+29,U+2C-2E,U+41-47,U+623,U+624,U+626-63A,U+641-64B,U+64E}
+@font-face{font-display:swap;font-family:'Cloister Black';src:url(fonts/cloisterblack.woff)}
+@font-face{font-display:swap;font-family:"Crimson Pro";font-style:normal;font-weight:400;src:url(fonts/crimson-pro.woff2) format("woff2")}
+@font-face{font-display:swap;font-family:"Crimson Pro";font-style:normal;font-weight:700;src:url(fonts/crimson-pro-bold.woff2) format("woff2")}
+@font-face{font-display:swap;font-family:"Crimson Pro";font-style:italic;font-weight:400;src:url(fonts/crimson-pro-italic.woff2) format("woff2")}
+#authors,#ebooks{margin:0;padding:0}
+#book-details{background-color:#f5f2e7;padding:20px}
+#book-details-cell{display:table-cell;vertical-align:top}
+#book-info img{height:526px;width:324px}
+#book-info img,#book-details{border-radius:5px}
+#book-info img,#book-details{box-shadow:0 0 5px rgba(0,0,0,0.3)}
+#book-table{border-spacing:15px;display:table}
+#ebooks > li > p:nth-of-type(1) > a{font-weight:700}
+#table-of-contents{padding:3em}
+#table-of-contents,.author img,.book img,input[type=text]{border:#222 solid 1px;border-radius:5px}
+#table-of-contents,input[type="text"]{background-color:#0000000d}
+.author img,.book img{height:326px;width:224px}
+.author,.book{display:inline-block;margin-bottom:4em;width:32%}
+.book p{margin:3px}
+.book-author{font-style:italic}
+a{color:inherit}
+a:hover{color:#4f9d85}
+article{margin:0 auto;max-width:75%}
+body{background-color:#e9e7e0;color:#222;font:20px/1.6 'Crimson Pro','Times New Roman',serif;margin:0}
+div.search,.author,.book,footer,h1,h2{text-align:center}
+footer{border-top:3px double;margin:1em;padding-top:1em}
+footer a{margin:0 .5em}
+footer p{font-size:small}
+h1,h2{border-bottom:3px double;margin:.75em;padding-bottom:.5em}
+header{background-color:#600;color:#eee;height:128px;position:relative}
+header a{bottom:0;position:absolute}
+header a,.book a,.author a,#table-of-contents a,nav a{text-decoration:none}
+header img{float:left;height:128px}
+input[type='text']{font:inherit;margin-bottom:3em;padding:1.5em;width:65%}
+main[dir='rtl'],article[dir='rtl']{font:1.2em 'KFGQPC Uthman Taha Naskh'}
+main[dir=ltr] h1,article[dir=ltr] h1,header a{font:52px 'Cloister Black'}
+nav{background-color:#000;border-bottom:5px solid #222;height:36px}
+nav a{background:url(images/nav.png) center top no-repeat;color:#fff;float:right;padding:6px 20px 0}
+@media only screen and (max-width: 480px) {
+#book-details{font:10px serif;padding:10px}
+#book-table{border-spacing:5px}
+.author,.book{width:100%}
+.book img,.author img,#book-info img{height:auto;max-width:100%}
+article{max-width:100%;padding:.5em}
 body{font-size:12px}
-article {
-max-width:100%;
-padding:.5em
 }
-
-.book img,.author img,#book-info img {
-max-width:100%;
-height:auto
-}
-
-.author,.book {
-width: 100%
-}
-#book-table {
-border-spacing:5px
-}
-#book-details { 
-font:10px serif;
-padding:10px
-}
-main[dir=ltr] h1,article[dir=ltr] h1,header a {font:36px 'Financier Display'}
-}
-@media(prefers-reduced-motion: no-preference){
-.book img:hover {
-transform:scale(1.05);
-box-shadow:3px 3px 1px #00000042;
-transition:all 200ms ease
-}
+@media(prefers-reduced-motion: no-preference) {
+.book img:hover{box-shadow:3px 3px 1px #00000042;transform:scale(1.05);transition:all 200ms ease}
 }
 
