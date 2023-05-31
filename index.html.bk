@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Based eBooks</title>
+  <link rel="icon" href="data:," />
+  <meta name="description" content=
+  "An independent, non-profit digital library, I hold it in my hands for the benefit of my Arabian Islamic nation." />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="preload" as="font" href="fonts/cloisterblack.woff"
+  type="font/woff" crossorigin="anonymous" fetchpriority="high" />
+  <link href="dark.css" media= "screen and (prefers-color-scheme: dark)" rel="stylesheet" type= "text/css" />
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1, shrink-to-fit=no" />
+</head>
+<body>
+  <header>
+    <img src="images/header.png" alt="header's image"
+    fetchpriority="high" /> <a href="index.html">Based eBooks</a>
+  </header>
+  <nav>
+    <a href="index.html">Home</a> <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+  <main dir="ltr">
+    <h1>Browse eBooks</h1><input id="search" onkeyup="search()"
+    type="text" placeholder="Search All Books" /> 
+   <ol id="ebooks">
+      <li class="book">
+        <a href=
+        "books/rene-guenon/the-crisis-of-the-modern-world/index.html"
+        tabindex="-1" property=
+        "schema:url"><picture><source srcset="books/rene-guenon/the-crisis-of-the-modern-world/cover@x2.avif x2, books/rene-guenon/the-crisis-of-the-modern-world/cover.avif 1x"
+        type="image/avif" /> <source srcset=
+        "books/rene-guenon/the-crisis-of-the-modern-world/cover.jpeg"
+        type="image/jpeg" /> <img src=
+        "books/rene-guenon/the-crisis-of-the-modern-world/cover.jpeg"
+        alt="Introduction to Magic book's cover" property=
+        "schema:image" loading="lazy" /></picture></a>
+        <p><a href=
+        "books/rene-guenon/the-crisis-of-the-modern-world/index.html"
+        property="schema:url"><strong>The Crisis of the Modern
+        World</strong></a></p>
+        <p><a class="c2" href="books/rene-guenon/index.html">René
+        Guénon</a></p>
+        <div class="details">
+          <p>136 Pages</p>
+          <p>Philosophy</p>
+          <p>Religion</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href=
+        "books/w.k.c-guthrie/a-history-of-greek-philosophy-volume-2/index.html"
+        tabindex="-1" property=
+        "schema:url"><picture><source srcset="books/w.k.c-guthrie/a-history-of-greek-philosophy-volume-2/cover.avif"
+        type="image/avif" /> <source srcset=
+        "books/w.k.c-guthrie/a-history-of-greek-philosophy-volume-2/cover.jpeg"
+        type="image/jpg" /> <img src=
+        "books/w.k.c-guthrie/a-history-of-greek-philosophy-volume-2/cover.jpg"
+        alt="Introduction to Magic book's cover" property=
+        "schema:image" loading="lazy" /></picture></a>
+        <p><a href=
+        "books/w.k.c-guthrie/a-history-of-greek-philosophy-volume-2/index.html"
+        property="schema:url"><strong>A History of Greek Philosophy
+        Volume 2</strong></a></p>
+        <p><a class="c2" href="books/w.k.c-guthrie/index.html">W.
+        K. C. Guthrie</a></p>
+        <div class="details">
+          <p>576 Pages</p>
+          <p>Philosophy</p>
+          <p>History</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href=
+        "books/ted-kaczynski/industrial-society-and-its-future/index.html"
+        tabindex="-1" property=
+        "schema:url"><picture><source srcset="books/ted-kaczynski/industrial-society-and-its-future/cover.avif"
+        type="image/avif" /> <source srcset=
+        "books/ted-kaczynski/industrial-society-and-its-future/cover.jpeg"
+        type="image/jpg" /> <img src=
+        "books/ted-kaczynski/industrial-society-and-its-future/cover.jpg"
+        alt="Introduction to Magic book's cover" property=
+        "schema:image" loading="lazy" /></picture></a>
+        <p><a href=
+        "books/ted-kaczynski/industrial-society-and-its-future/index.html"
+        property="schema:url"><strong>Industrial Society and Its
+        Future</strong></a></p>
+        <p><a class="c2" href=
+        "books/ted-kaczynski/index.html">Theodore John
+        Kaczynski</a></p>
+        <div class="details">
+          <p>149 Pages</p>
+          <p>Philosophy</p>
+          <p>Politics</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href=
+        "books/julius-evola/introduction-to-magic/index.html"
+        tabindex="-1" property=
+        "schema:url"><picture><source srcset="books/julius-evola/introduction-to-magic/cover.avif"
+        type="image/avif" /> <source srcset=
+        "books/julius-evola/introduction-to-magic/cover.jpeg" type=
+        "image/jpg" /> <img src=
+        "books/julius-evola/introduction-to-magic/cover.jpeg" alt=
+        "Introduction to Magic book's cover" property=
+        "schema:image" loading="lazy" /></picture></a>
+        <p><a href=
+        "books/julius-evola/introduction-to-magic/index.html"
+        property="schema:url"><strong>Introduction to
+        Magic</strong></a></p>
+        <p><a class="c2" href=
+        "books/julius-evola/index.html">Julius Evola</a></p>
+        <div class="details">
+          <p>416 Pages</p>
+          <p>Philosophy</p>
+          <p>Spirituality</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href="books/julius-evola/ride-the-tiger/index.html"
+        tabindex="-1" property=
+        "schema:url"><picture><source srcset="books/julius-evola/ride-the-tiger/cover.avif"
+        type="image/avif" /> <source srcset=
+        "books/julius-evola/ride-the-tiger/cover.jpeg" type=
+        "image/jpg" /> <img src=
+        "books/julius-evola/ride-the-tiger/cover.jpeg" alt=
+        "Ride the Tiger book's cover" loading=
+        "lazy" /></picture></a>
+        <p><a href="books/julius-evola/ride-the-tiger/index.html"
+        property="schema:url"><strong>Ride the
+        Tiger</strong></a></p>
+        <p><a class="c2" href=
+        "books/julius-evola/index.html">Julius Evola</a></p>
+        <div class="details">
+          <p>242 Pages</p>
+          <p>Philosophy</p>
+          <p>Politics</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href=
+        "books/julius-evola/revolt-against-the-modern-world/index.html"
+        tabindex="-1" property=
+        "schema:url"><picture><source srcset="books/julius-evola/revolt-against-the-modern-world/cover.avif"
+        type="image/avif" /> <source srcset=
+        "books/julius-evola/revolt-against-the-modern-world/cover.jpeg"
+        type="image/jpg" /> <img src=
+        "books/julius-evola/revolt-against-the-modern-world/cover.jpeg"
+        alt="Revolt Against the Modern World book's cover" loading=
+        "lazy" /></picture></a>
+        <p><a href=
+        "books/julius-evola/revolt-against-the-modern-world/index.html"
+        property="schema:url"><strong>Revolt Against the Modern
+        World</strong></a></p>
+        <p><a class="c2" href=
+        "books/julius-evola/index.html">Julius Evola</a></p>
+        <div class="details">
+          <p>375 Pages</p>
+          <p>Philosophy</p>
+          <p>Spirituality</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href=
+        "books/alexander-dugin/ethnosociology-the-foundations/index.html"
+        tabindex="-1" property=
+        "schema:url"><picture><source srcset="books/alexander-dugin/ethnosociology-the-foundations/cover.avif"
+        type="image/avif" /> <source srcset=
+        "books/alexander-dugin/ethnosociology-the-foundations/cover.jpeg"
+        type="image/jpg" /> <img src=
+        "books/alexander-dugin/ethnosociology-the-foundations/cover.jpeg"
+        alt="Ethnosociology: The Foundations book's cover" loading=
+        "lazy" /></picture></a>
+        <p><a href=
+        "books/julius-evola/ethnosociology-the-foundations/index.html"
+        property="schema:url"><strong>Ethnosociology: The
+        Foundations</strong></a></p>
+        <p><a class="c2" href=
+        "books/alexander-dugin/index.html">Aleksandr Dugin</a></p>
+        <div class="details">
+          <p>308 Pages</p>
+          <p>Philosophy</p>
+          <p>Sociology</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href=
+        "books/alexander-dugin/fourth-political-theory/index.html"
+        tabindex="-1" property=
+        "schema:url"><picture><source srcset="books/alexander-dugin/fourth-political-theory/cover.avif"
+        type="image/avif" /> <source srcset=
+        "books/alexander-dugin/fourth-political-theory/cover.jpeg"
+        type="image/jpg" /> <img src=
+        "books/alexander-dugin/fourth-political-theory/cover.jpeg"
+        alt="Fourth Political Theory book's cover" loading=
+        "lazy" /></picture></a>
+        <p><a href=
+        "books/julius-evola/fourth-political-theory/index.html"
+        property="schema:url"><strong>Fourth Political
+        Theory</strong></a></p>
+        <p><a class="c2" href=
+        "books/alexander-dugin/index.html">Aleksandr Dugin</a></p>
+        <div class="details">
+          <p>211 Pages</p>
+          <p>Philosophy</p>
+          <p>Politics</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href="books/julius-evola/east-and-west/index.html"
+        tabindex="-1" property=
+        "schema:url"><picture><source srcset="books/julius-evola/east-and-west/cover.avif"
+        type="image/avif" /> <source srcset=
+        "books/julius-evola/east-and-west/cover.jpeg" type=
+        "image/jpg" /> <img src=
+        "books/julius-evola/east-and-west/cover.jpeg" alt=
+        "East and West book's cover" loading=
+        "lazy" /></picture></a>
+        <p><a href="books/julius-evola/east-and-west/index.html"
+        property="schema:url"><strong>East and
+        West</strong></a></p>
+        <p><a class="c2" href=
+        "books/julius-evola/index.html">Julius Evola</a></p>
+        <div class="details">
+          <p>198 Pages</p>
+          <p>Philosophy</p>
+          <p>Politics</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href="books/julius-evola/the-yoga-of-power/index.html"
+        tabindex="-1" property=
+        "schema:url"><picture><source srcset="books/julius-evola/the-yoga-of-power/cover.avif"
+        type="image/avif" /> <source srcset=
+        "books/julius-evola/the-yoga-of-power/cover.jpeg" type=
+        "image/jpg" /> <img src=
+        "books/julius-evola/the-yoga-of-power/cover.jpeg" alt=
+        "The Yoga of Power book's cover" loading=
+        "lazy" /></picture></a>
+        <p><a href=
+        "books/julius-evola/the-yoga-of-power/index.html" property=
+        "schema:url"><strong>The Yoga of Power</strong></a></p>
+        <p><a class="c2" href=
+        "books/julius-evola/index.html">Julius Evola</a></p>
+        <div class="details">
+          <p>256 Pages</p>
+          <p>Philosophy</p>
+          <p>Spirituality</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href="books/julius-evola/men-among-the-ruins/index.html"
+        tabindex="-1" property=
+        "schema:url"><picture><source srcset="books/julius-evola/men-among-the-ruins/cover.avif"
+        type="image/avif" /> <source srcset=
+        "books/julius-evola/men-among-the-ruins/cover.jpeg" type=
+        "image/jpg" /> <img src=
+        "books/julius-evola/men-among-the-ruins/cover.jpeg" alt=
+        "Men Among The Ruins book's cover" loading=
+        "lazy" /></picture></a>
+        <p><a href=
+        "books/julius-evola/men-among-the-ruins/index.html"
+        property="schema:url"><strong>Men Among The
+        Ruins</strong></a></p>
+        <p><a class="c2" href=
+        "books/julius-evola/index.html">Julius Evola</a></p>
+        <div class="details">
+          <p>328 Pages</p>
+          <p>Philosophy</p>
+          <p>Politics</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href=
+        "books/julius-evola/a-handbook-for-right-wing-youth/index.html"
+        tabindex="-1" property=
+        "schema:url"><picture><source srcset="books/julius-evola/a-handbook-for-right-wing-youth/cover.avif"
+        type="image/avif" /> <source srcset=
+        "books/julius-evola/a-handbook-for-right-wing-youth/cover.jpeg"
+        type="image/jpg" /> <img src=
+        "books/julius-evola/a-handbook-for-right-wing-youth/cover.jpeg"
+        alt="A Handbook for Right Wing Youth book's cover" loading=
+        "lazy" /></picture></a>
+        <p><a href=
+        "books/julius-evola/a-handbook-for-right-wing-youth/index.html"
+        property="schema:url"><strong>A Handbook for Right Wing
+        Youth</strong></a></p>
+        <p><a class="c2" href=
+        "books/julius-evola/index.html">Julius Evola</a></p>
+        <div class="details">
+          <p>180 Pages</p>
+          <p>Philosophy</p>
+          <p>Politics</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href=
+        "books/julius-evola/pagan-imperialism-and-metaphysics-of-war/index.html"
+        tabindex="-1" property=
+        "schema:url"><picture><source srcset="books/julius-evola/pagan-imperialism-and-metaphysics-of-war/cover.avif"
+        type="image/avif" /> <source srcset=
+        "books/julius-evola/pagan-imperialism-and-metaphysics-of-war/cover.jpeg"
+        type="image/jpg" /> <img src=
+        "books/julius-evola/pagan-imperialism-and-metaphysics-of-war/cover.jpeg"
+        alt="Pagan Imperialism and Metaphysics of War book's cover"
+        loading="lazy" /></picture></a>
+        <p><a href=
+        "books/julius-evola/pagan-imperialism-and-metaphysics-of-war/index.html"
+        property="schema:url"><strong>Pagan Imperialism and
+        Metaphysics of War</strong></a></p>
+        <p><a class="c2" href=
+        "books/julius-evola/index.html">Julius Evola</a></p>
+        <div class="details">
+          <p>204 Pages</p>
+          <p>Philosophy</p>
+          <p>Politics</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href=
+        "books/alexander-dugin/political-platonism/index.html"
+        tabindex="-1" property=
+        "schema:url"><picture><source srcset="books/alexander-dugin/political-platonism/cover.avif"
+        type="image/avif" /> <source srcset=
+        "books/alexander-dugin/political-platonism/cover.jpeg"
+        type="image/jpg" /> <img src=
+        "books/alexander-dugin/political-platonism/cover.jpeg" alt=
+        "Political Platonism books'cover" loading=
+        "lazy" /></picture></a>
+        <p><a href="books/political-platonism/index.html" property=
+        "schema:url"><strong>Political Platonism</strong></a></p>
+        <p><a class="c2" href=
+        "books/alexander-dugin/index.html">Aleksandr Dugin</a></p>
+        <div class="details">
+          <p>152 Pages</p>
+          <p>Philosophy</p>
+          <p>Politics</p>
+        </div>
+      </li>
+    </ol>
+    <h1>Browse the authors</h1>
+    <ol id="authors">
+      <li class="author">
+        <a href="books/martin-heidegger/index.html" tabindex="-1"
+        property="schema:url"><picture><source srcset=
+        "books/martin-heidegger/heidegger.avif" type=
+        "image/avif" /> <source srcset=
+        "books/martin-heidegger/heidegger.jpg" type="image/jpg" />
+        <img src="books/martin-heidegger/heidegger.jpg" alt=""
+        loading="lazy" /></picture></a>
+        <p><a class="c2" href="books/martin-heidegger/index.html"
+        property="schema:url">Martin Heidegger</a></p>
+      </li>
+      <li class="author">
+        <a href="books/guenon/index.html" tabindex="-1" property=
+        "schema:url"><picture><source srcset=
+        "books/rene-guenon/guenon.avif" type="image/avif" />
+        <source srcset="books/rene-guenon/guenon.webp" type=
+        "image/webp" /> <img src="books/rene-guenon/guenon.webp"
+        alt="" loading="lazy" /></picture></a>
+        <p><a class="c2" href="books/guenon/index.html" property=
+        "schema:url">René Guénon</a></p>
+      </li>
+      <li class="author">
+        <a href="books/alexander-dugin/index.html" tabindex="-1"
+        property="schema:url"><picture><source srcset=
+        "books/alexander-dugin/dugin.avif" type="image/avif" />
+        <source srcset="books/alexander-dugin/dugin.jpeg" type=
+        "image/jpg" /> <img src="imgs/dugin.jpeg" alt="" loading=
+        "lazy" /></picture></a>
+        <p><a class="c2" href="books/alexander-dugin/index.html"
+        property="schema:url">Aleksandr Dugin</a></p>
+      </li>
+      <li class="author">
+        <a href="books/julius-evola/index.html" tabindex="-1"
+        property="schema:url"><picture><source srcset=
+        "books/julius-evola/evola.avif" type="image/avif" />
+        <source srcset="books/julius-evola/evola.jpeg" type=
+        "image/jpg" /> <img src="books/julius-evola/evola.jpeg"
+        alt="" loading="lazy" /></picture></a>
+        <p><a class="c2" href="books/julius-evola/index.html"
+        property="schema:url">Julius Evola</a></p>
+      </li>
+      <li class="author">
+        <a href="books/nietzsche/index.html" tabindex="-1"
+        property="schema:url"><picture><source srcset=
+        "books/nietzsche/nietzsche.avif" type="image/avif" />
+        <source srcset="books/nietzsche/nietzsche.jpeg" type=
+        "image/jpg" /> <img src="books/nietzsche/nietzsche.jpeg"
+        alt="" loading="lazy" /></picture></a>
+        <p><a class="c2" href="books/nietzsche/index.html"
+        property="schema:url">Friedrich Nietzsche</a></p>
+      </li>
+    </ol>
+    <footer>
+      <a href="index.html#ebooks">Ebooks</a> • <a href=
+      "index.html#authors">Authors</a> • <a href=
+      "about.html">About</a> • <a href="donate.html">Donate</a> •
+      <a href="settings.html">Settings</a> • <a href=
+      "https://github.com/LaithOsama/Based-eBooks">Source</a> •
+      <a href="rss.xml">Ebook Feeds</a>
+      <p>Based eBooks is inspired by <a href=
+      "https://standardebooks.org">Standard Ebooks</a>
+      library.<br />
+      Most of the ebooks here is taken from Internet Archive,
+      Library Genesis and Project Gutenberg.<br />
+      Yes, most of content here is copyrighted by someone, wanna
+      fight ? Go fuck yourself bastard, enemy copyright is bullshit
+      for me.</p>
+    </footer>
+  </main>
+</body>
+</html>
