@@ -4,7 +4,8 @@
 @font-face{font-display:swap;font-family:"Crimson Pro";font-style:normal;font-weight:700;src:url(fonts/crimson-pro-bold.woff2) format("woff2")}
 @font-face{font-display:swap;font-family:"Crimson Pro";font-style:italic;font-weight:400;src:url(fonts/crimson-pro-italic.woff2) format("woff2")}
 #authors,#ebooks{padding:0}
-#book-details p{padding:20px}
+#book-info{margin-top:10px}
+#book-details p{padding:20px;margin:0 0 5px}
 #book-details-cell{display:table-cell;vertical-align:top}
 #book-info img{height:526px;width:324px}
 #book-info img,#book-details p{border-radius:5px}
@@ -37,7 +38,7 @@ main[dir=ltr] h1,article[dir=ltr] h1,header a{font:52px 'Cloister Black'}
 nav{background-color:#000;border-bottom:5px solid #222;height:26px}
 nav a{background:url(images/nav.png) center top no-repeat;font-size:12px;color:#fff;float:right;padding:5px 10px}
 @media only screen and (max-width: 480px) {
-#book-details p{font-size:7px;padding:0px}
+#book-details p{font-size:8px;padding:4px}
 #book-details {padding:0px 6px 0}
 #book-table{border-spacing:0px}
 .author,.book{width:100%}
