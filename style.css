@@ -20,11 +20,11 @@
 .book-author{font-style:italic}
 a{color:inherit}
 main a:hover{color:#4f9d85}
-article{margin:0 auto;max-width:75%}
-body{background-color:#e9e7e0;color:#222;font:20px/1.6 'Crimson Pro','Times New Roman',serif;margin:0}
+article{margin:0 auto;max-width:75%;text-align: justify}
+body{background-color:#F5F5DC;color:#333333;font:20px/1.6 'Crimson Pro','Times New Roman',serif;margin:0}
 div.search,.author,.book,footer,h1,h2{text-align:center}
 footer{border-top:3px double;margin:1em;padding-top:1em}
-footer a{margin:0 .5em}
+article p, footer a{margin:0 .5em}
 footer p{font-size:small}
 h1,h2{border-bottom:3px double;margin:.75em;padding-bottom:.5em}
 header{background-color:#600;color:#eee;height:128px;position:relative}
@@ -34,15 +34,14 @@ header img{float:left;height:128px}
 input[type=text]{margin-bottom:3em;padding:2em;width:65%}
 main[dir=rtl],article[dir=rtl]{font:1.2em 'KFGQPC Uthman Taha Naskh'}
 main[dir=ltr] h1,article[dir=ltr] h1,header a{font:52px 'Cloister Black'}
-nav{background-color:#000;border-bottom:5px solid #222;height:36px}
-nav a{background:url(images/nav.png) center top no-repeat;color:#fff;float:right;padding:6px 20px 0}
+nav{background-color:#000;border-bottom:5px solid #222;height:26px}
+nav a{background:url(images/nav.png) center top no-repeat;font-size:12px;color:#fff;float:right;padding:5px 10px}
 @media only screen and (max-width: 480px) {
-body {font-size:.88em}
-#book-details{font:10px serif;padding:10px}
+#book-details{font:11px serif;padding:10px}
 #book-table{border-spacing:5px}
 .author,.book{width:100%}
 .book img,.author img,#book-info img{height:auto;max-width:100%}
-article{max-width:100%;padding:.5em}
+article{max-width:90%}
 }
 @media(prefers-reduced-motion: no-preference) {
 .book img:hover{box-shadow:3px 3px 1px #00000042;transform:scale(1.05);transition:all 200ms ease}
