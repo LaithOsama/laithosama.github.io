@@ -230,6 +230,12 @@ nav a {
   float: right;
   padding: 5px 10px;
 }
+.author img,
+.book img {
+  max-width: 100%;
+    height: auto;
+    }
+
 
 @media only screen and (max-width: 480px) {
   #book-details p {
@@ -247,14 +253,15 @@ nav a {
   
   .author,
   .book {
-    width: 100%;
+   width: calc(48.88% - 0px);
+
   }
   
   .book img,
   .author img,
   #book-info img {
-   height: 230px;
-   width: 150px;
+  width:162px;
+  height: 230px;
   }
   
   article {

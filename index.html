@@ -25,7 +25,7 @@
       <div class="search">
       <input id="search" onkeyup="search()" type="text" placeholder="Search All Books"/>
       <style>
-	function search() {
+	   function search() {
            let input = document.getElementById('search').value
            input = input.toLowerCase();
            let x = document.getElementsByClassName('book');
@@ -35,8 +35,8 @@
            		} else {
                		x[i].style.display = "list-item";
     			}
-  		}
-	}
+  		    }
+	    }
       </style>
       </div>
       <ol id="ebooks">
