@@ -6,7 +6,7 @@
     <link rel="icon" href="data:,"/>
     <meta name="description" content="An independent, non-profit digital library, I hold it in my hands for the benefit of my Arabian Islamic nation."/>
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <!--<link href="dark.css" media="screen and (prefers-color-scheme: dark)" rel="stylesheet" type="text/css" />-->
+    <link href="dark.css" media="screen and (prefers-color-scheme: dark)" rel="stylesheet" type="text/css" />
     <link rel="preload" as="font" href="fonts/cloisterblack.woff" type="font/woff" crossorigin="anonymous" fetchpriority="high"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   </head>
@@ -24,6 +24,20 @@
       <h1>Browse eBooks</h1>
       <div class="search">
       <input id="search" onkeyup="search()" type="text" placeholder="Search All Books"/>
+      <style>
+	function search() {
+           let input = document.getElementById('search').value
+           input = input.toLowerCase();
+           let x = document.getElementsByClassName('book');
+           for (i = 0; i < x.length; i++) {
+             if (!x[i].innerHTML.toLowerCase().includes(input)) {
+               		x[i].style.display = "none";
+           		} else {
+               		x[i].style.display = "list-item";
+    			}
+  		}
+	}
+      </style>
       </div>
       <ol id="ebooks">
         <li class="book">
