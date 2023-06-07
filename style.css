@@ -111,7 +111,7 @@ input[type=text] {
 .book {
   display: inline-block;
   margin-bottom: 4em;
-  width: 32%;
+  width: calc(25.88% - 15px);
 }
 
 .book p {
@@ -137,10 +137,13 @@ article {
 }
 
 body {
-  background-color: #f5f5dc;
-  color: #333333;
+  background-color: #e9e7e0;
+  color: #222;
   font: 20px/1.6 'Crimson Pro', 'Times New Roman', serif;
   margin: 0;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -webkit-text-size-adjust: 100%;
 }
 
 div.search,
@@ -230,17 +233,14 @@ nav a {
   float: right;
   padding: 5px 10px;
 }
-.author img,
-.book img {
-  max-width: 100%;
-    height: auto;
-    }
-
 
 @media only screen and (max-width: 480px) {
+  .book p {
+    font-size: .88em;
+  }
   #book-details p {
     font: 10px/1.2 serif;
-    padding: 4px;
+    padding: 5px;
   }
   
   #book-details {
@@ -253,17 +253,15 @@ nav a {
   
   .author,
   .book {
-   width: calc(48.88% - 0px);
+    width: calc(48.99% - 0px);
+  }
 
-  }
-  
   .book img,
-  .author img,
   #book-info img {
-  width:162px;
-  height: 230px;
+    width: 162px;
+    height: 230px;
   }
-  
+
   article {
     max-width: 90%;
   }
