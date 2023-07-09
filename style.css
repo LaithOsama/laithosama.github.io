@@ -3,7 +3,6 @@
   font-family: 'KFGQPC Uthman Taha Naskh';
   src: url(fonts/uthman-taha-naskh.woff2);
   unicode-range: U+600-6FF, U+FB50-FDFF, U+FE70-FEFF;
-
 }
 
 @font-face {
@@ -11,7 +10,6 @@
   font-family: 'Cloister Black';
   src: url(fonts/cloisterblack.woff);
   unicode-range: U+0-7F;
-
 }
 
 @font-face {
@@ -21,7 +19,6 @@
   font-weight: 400;
   src: url(fonts/crimson-pro.woff2) format("woff2");
   unicode-range: U+0-7F;
-
 }
 
 @font-face {
@@ -31,7 +28,6 @@
   font-weight: 700;
   src: url(fonts/crimson-pro-bold.woff2) format("woff2");
   unicode-range: U+0-7F;
-
 }
 
 @font-face {
@@ -41,42 +37,46 @@
   font-weight: 400;
   src: url(fonts/crimson-pro-italic.woff2) format("woff2");
   unicode-range: U+0-7F;
-
 }
 
-#authors, #ebooks {
-  padding: 0;
+#book-metadata {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 15px;
 }
 
-#book-info {
-  margin-top: 10px;
+#book-metadata > img {
+  grid-row: span 2;
 }
 
-#book-details p {
-  padding: 20px;
-  margin: 0 0 5px;
-  text-align: justify;
+#book-details {
+  display: grid;
+    grid-template-rows: auto auto;
 }
 
-#book-details-cell {
-  display: table-cell;
-  vertical-align: top;
+#authors,
+#ebooks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 6em;
+  gap-bottom:2em;
+  list-style: none;
 }
 
-#book-info img {
-  height:526px;
-  width:324px;
+/* TODO fellback here if the browser doesn't support CSS3 grid. 
+#authors > li,
+#ebooks > li {
+  display: inline-block;
+  margin-bottom: 4em;
+  width: calc(25.88% - 15px);
 }
+*/
 
 #book-info img,
+#metadata,
 #book-details p {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
-#book-table {
-  border-spacing: 15px;
-  display: table;
 }
 
 #ebooks > li > p:nth-of-type(1) > a {
@@ -88,37 +88,36 @@
 }
 
 #table-of-contents,
-.author img,
-.book img,
+#authors > li img,
+#ebooks > li img,
 input[type=text] {
-  border: #222 solid 1px;
+  border: 1px solid #222;
   border-radius: 5px;
 }
 
+#authors > li,
+#ebooks > li {
+  margin-bottom:2em;
+}
+#metadata,
 #table-of-contents,
 #book-details p,
 input[type=text] {
-  background-color: #0000000d;
+  background-color: rgba(0, 0, 0, 0.13);
 }
 
-.author img,
-.book img {
-  height: 326px;
-  width: 224px;
+#authors > li img,
+#ebooks > li img {
+height: 335px;
+width: 224px;
+
 }
 
-.author,
-.book {
-  display: inline-block;
-  margin-bottom: 4em;
-  width: calc(25.88% - 15px);
-}
-
-.book p {
+#ebooks > li p {
   margin: 3px;
 }
 
-.book-author {
+#ebooks > li p:nth-of-type(2) > a {
   font-style: italic;
 }
 
@@ -137,18 +136,22 @@ article {
 }
 
 body {
-  background-color: #e9e7e0;
-  color: #222;
+  background-color: #E8D6CB;
+  color: #403D39;
   font: 20px/1.6 'Crimson Pro', 'Times New Roman', serif;
-  margin: 0;
   hyphens: auto;
   -webkit-hyphens: auto;
   -webkit-text-size-adjust: 100%;
 }
 
+html, body, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
 div.search,
-.author,
-.book,
+#authors > li,
+#ebooks > li,
 footer,
 h1,
 h2 {
@@ -190,8 +193,8 @@ header a {
 }
 
 header a,
-.book a,
-.author a,
+#ebooks > li a,
+#authors > li a,
 #table-of-contents a,
 nav a {
   text-decoration: none;
@@ -220,6 +223,12 @@ header a {
   font: 52px 'Cloister Black';
 }
 
+article[dir="ltr"] img {
+  height: auto;
+  max-height: 100%;
+  width: 100%;
+}
+
 nav {
   background-color: #000;
   border-bottom: 5px solid #222;
@@ -235,31 +244,22 @@ nav a {
 }
 
 @media only screen and (max-width: 480px) {
-  .book p {
-    font-size: .88em;
+  #authors,
+  #ebooks {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
   }
+
   #book-details p {
     font: 10px/1.2 serif;
     padding: 5px;
   }
-  
-  #book-details {
-    padding: 0 6px 0;
-  }
-  
-  #book-table {
-    border-spacing: 0px;
-  }
-  
-  .author,
-  .book {
-    width: calc(48.99% - 0px);
-  }
 
-  .book img,
-  #book-info img {
-    width: 162px;
-    height: 230px;
+  #authors > li img,
+  #ebooks > li img,
+  #book-metadata img {
+    width: 160px;
+    height: 240px;
   }
 
   article {
@@ -268,7 +268,7 @@ nav a {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .book img:hover {
+  #ebooks > li img:hover {
     box-shadow: 3px 3px 1px #00000042;
     transform: scale(1.05);
     transition: all 200ms ease;
