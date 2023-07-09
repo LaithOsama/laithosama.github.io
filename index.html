@@ -24,23 +24,6 @@
       </nav>
     <main dir="ltr">
       <h1>Browse eBooks</h1>
-      <div class="search">
-      <input id="search" onkeyup="search()" type="text" placeholder="Search All Books"/>
-      <style>
-	   function search() {
-           let input = document.getElementById('search').value
-           input = input.toLowerCase();
-           let x = document.getElementsByClassName('book');
-           for (i = 0; i < x.length; i++) {
-             if (!x[i].innerHTML.toLowerCase().includes(input)) {
-               		x[i].style.display = "none";
-           		} else {
-               		x[i].style.display = "list-item";
-    			}
-  		    }
-	    }
-      </style>
-      </div>
       <ol id="ebooks">
         <li >
           <a href="books/rene-guenon/the-crisis-of-the-modern-world/index.html" tabindex="-1" property="schema:url">
