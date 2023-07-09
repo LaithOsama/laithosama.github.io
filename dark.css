@@ -1,4 +1,4 @@
 body {color:#999999;background-color:#111211}
-input[type=text],#metadata,#table-of-contents,#book-details p{background-color:#191919}
-input[type=text],.book img,.author img,#table-of-contents{border:#000 solid 1px}
+input[type=text],#metadata,#table-of-contents,#book-metadata{background-color:#191919}
+input[type=text],#authors > li img,#ebooks > li img,#table-of-contents{border:#000 solid 1px}
 

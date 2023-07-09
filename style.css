@@ -39,20 +39,40 @@
   unicode-range: U+0-7F;
 }
 
-#book-metadata {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 15px;
-}
+       #book-metadata {
+            margin: 20px auto;
+            padding: 20px;
+overflow: hidden
+        }
 
-#book-metadata > img {
-  grid-row: span 2;
-}
+        #cover {
+            width: 200px;
+            height: 300px;
+            margin-right: 20px;
+            float: left;
 
-#book-details {
-  display: grid;
-    grid-template-rows: auto auto;
-}
+        }
+
+        #book-details {
+            overflow: hidden; /* Clear the float */
+        }
+
+         #book-details > p:nth-of-type(1) {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        #book-details > p:nth-of-type(2) {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        #book-details > p:nth-of-type(4) {
+            margin-top: 10px;
+        }
+
+
 
 #authors,
 #ebooks {
@@ -72,9 +92,7 @@
 }
 */
 
-#book-info img,
-#metadata,
-#book-details p {
+#book-metadata,#metadata {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
@@ -95,13 +113,9 @@ input[type=text] {
   border-radius: 5px;
 }
 
-#authors > li,
-#ebooks > li {
-  margin-bottom:2em;
-}
+#book-metadata,
 #metadata,
 #table-of-contents,
-#book-details p,
 input[type=text] {
   background-color: rgba(0, 0, 0, 0.13);
 }
@@ -117,7 +131,7 @@ width: 224px;
   margin: 3px;
 }
 
-#ebooks > li p:nth-of-type(2) > a {
+#ebooks > li p:nth-of-type(2) > a, #book-details > p:nth-of-type(2) {
   font-style: italic;
 }
 
@@ -133,6 +147,7 @@ article {
   margin: 0 auto;
   max-width: 75%;
   text-align: justify;
+  font-variant-numeric: oldstyle-nums;
 }
 
 body {
@@ -166,7 +181,7 @@ footer {
 
 article p,
 footer a {
-  margin: 0 .5em;
+  margin: 0 10px;
 }
 
 footer p {
@@ -182,7 +197,7 @@ h2 {
 
 header {
   background-color: #600;
-  color: #eee;
+  color: #E8D6CB;
   height: 128px;
   position: relative;
 }
@@ -196,6 +211,7 @@ header a,
 #ebooks > li a,
 #authors > li a,
 #table-of-contents a,
+footer a,
 nav a {
   text-decoration: none;
 }
@@ -243,6 +259,14 @@ nav a {
   padding: 5px 10px;
 }
 
+ul {
+  list-style-type: disc;
+}
+
+li { 
+  margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 480px) {
   #authors,
   #ebooks {
@@ -250,21 +274,28 @@ nav a {
     grid-gap: 5px;
   }
 
+  body {
+    font-size: .88em
+    }
   #book-details p {
-    font: 10px/1.2 serif;
-    padding: 5px;
+    font: 12px/1.2 serif;
   }
 
   #authors > li img,
   #ebooks > li img,
-  #book-metadata img {
-    width: 160px;
-    height: 240px;
+  #cover {
+    width: 165px;
+    height: 224px;
   }
 
   article {
     max-width: 90%;
   }
+
+  ul, ol {
+  list-style: none;
+}
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -274,4 +305,3 @@ nav a {
     transition: all 200ms ease;
   }
 }
-
