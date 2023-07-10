@@ -45,15 +45,14 @@ ul{list-style-type:disc}
 @media only screen and (max-width: 480px) {
 #authors > li img,#ebooks > li img,#cover{height:224px;width:165px}
 #authors,#ebooks{grid-gap:5px;grid-template-columns:repeat(2,1fr)}
-#book-details > p:nth-of-type(1){font-size:16px;font-weight:700}
-#book-details > p:nth-of-type(2){font-size:12px;margin:5px 0}
-#book-details > p:nth-of-type(4){margin-top:6px}
+#book-details > p:nth-of-type(4){display:none} 
 #book-details p{font:12px/1.2 serif}
 article{max-width:90%}
-body,#authors,#ebooks{font-size:16px;padding:0}
+body{font-size:16px}
+#authors,#ebooks{padding:0}
 #ebooks > li,#authors > li {margin-bottom:2em}
 }
 @media (prefers-reduced-motion: no-preference) {
-#ebooks > li img:hover{box-shadow:3px 3px 1px #00000042;transform:scale(1.05);transition:all 200ms ease}
+#ebooks > li img:hover,#authors > li img:hover{box-shadow:3px 3px 1px #00000042;transform:scale(1.05);transition:all 200ms ease}
 }
 
