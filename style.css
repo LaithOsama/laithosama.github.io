@@ -18,7 +18,7 @@
 #ebooks > li > p:nth-of-type(1) > a{font-weight:700}
 #ebooks > li p:nth-of-type(2) > a,#book-details > p:nth-of-type(2){font-style:italic}
 #table-of-contents{padding:3em}
-#table-of-contents,#authors > li img,#ebooks > li img{border:1px solid #222;border-radius:5px}
+#cover,#table-of-contents,#authors > li img,#ebooks > li img{border:1px solid #222;border-radius:5px}
 a{color:inherit}
 article{font-variant-numeric:oldstyle-nums;margin:0 auto;max-width:75%;text-align:justify}
 article p,footer a{margin:0 10px}
@@ -31,10 +31,10 @@ header{background-color:#600;color:#E8D6CB;height:128px;position:relative}
 header a{bottom:0;position:absolute}
 header a,#ebooks > li a,#authors > li a,#table-of-contents a,footer a,nav a{text-decoration:none}
 header img{float:left;height:128px}
-html,body,ul,ol,#ebooks > li > p{margin:0;padding:0}
+html,body,#ebooks > li > p{margin:0;padding:0}
 main{padding:0 2em}
 main a:hover{color:#4f9d85}
-main[dir=ltr] h1,article[dir=ltr] h1,header a{font:52px "League Spartan"}
+main[dir=ltr] h1,article[dir=ltr] h1,header a{font:48px "League Spartan"}
 main[dir=rtl],article[dir=rtl]{direction:rtl;font-family:'KFGQPC Uthman Taha Naskh'}
 nav{background-color:#000;border-bottom:5px solid #222;height:26px}
 nav a{background:url(images/nav.png) center top no-repeat;color:#fff;float:right;font-size:12px;padding:5px 10px}
@@ -47,8 +47,8 @@ ul{list-style-type:disc}
 #book-details > p:nth-of-type(4){margin-top:6px}
 #book-details p{font:12px/1.2 serif}
 article{max-width:90%}
-body{font-size:.88em;padding:0}
-ul,ol{list-style:none}
+body,main{font-size:16px;padding:0}
+#ebooks > li {margin-bottom:2em}
 }
 @media (prefers-reduced-motion: no-preference) {
 #ebooks > li img:hover{box-shadow:3px 3px 1px #00000042;transform:scale(1.05);transition:all 200ms ease}
