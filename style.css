@@ -5,7 +5,7 @@
 @font-face{font-display:swap;font-family:"Crimson Pro";font-style:italic;font-weight:400;src:url(fonts/crimson-pro-italic.woff2) format("woff2");unicode-range:U+0-7F}
 @font-face{font-display:swap;font-family:"Fork Awesome";font-style:normal;font-weight:400;src:url(/fonts/fork-awesome-subset.woff2) format("woff2")}
 @font-face{font-display:swap;font-family:"League Spartan";font-style:normal;font-weight:700;src:url(/fonts/league-spartan-bold.woff2) format("woff2")}
-#authors,#ebooks{padding:0 2em}
+#authors,#ebooks,#book-metadata{padding:0 2em}
 #authors > li,#ebooks > li,footer,h1,h2{text-align:center}
 #authors,#ebooks{display:grid;grid-gap:4em;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));list-style:none}
 #book-details > p:nth-of-type(1){font-size:22px;font-weight:700}
@@ -18,29 +18,29 @@
 #cover,#authors > li img,#ebooks > li img{height:335px;width:224px}
 #ebooks > li > p:nth-of-type(1) > a{font-weight:700}
 #ebooks > li p:nth-of-type(2) > a,#book-details > p:nth-of-type(2), #authors > li > p > a{font-style:italic}
-#table-of-contents{padding:3em}
+#table-of-contents{list-style:none;padding:3em}
 #cover,#table-of-contents,#authors > li img,#ebooks > li img{border:1px solid #222;border-radius:5px}
 a{color:inherit}
-article{margin:0 auto;max-width:75%;text-align:justify}
+article{margin:0 auto;max-width:75%;text-align:justify;hyphens:auto}
 article p,footer a{margin:0 10px}
 article[dir="ltr"] img{height:auto;max-height:100%;width:100%}
-body{-webkit-hyphens:auto;-webkit-text-size-adjust:100%;background-color:#E8D6CB;color:#403D39;font:20px/1.6 'Crimson Pro','Times New Roman',serif;hyphens:auto}
+body{-webkit-hyphens:auto;-webkit-text-size-adjust:100%;background-color:#e1d8b3;color:#403D39;font:20px/1.6 'Crimson Pro','Times New Roman',serif;hyphens:auto}
 footer{border-top:3px double;margin:1em;padding-top:1em}
 footer p{font-size:small}
 h1,h2{border-bottom:3px double;margin:.75em;padding-bottom:.5em}
-header{background-color:#600;color:#E8D6CB;height:128px;position:relative}
-header a{bottom:0;position:absolute}
-header a,#ebooks > li a,#authors > li a,#table-of-contents a,footer a,nav a{text-decoration:none}
-header img{float:left;height:128px}
+#ebooks > li a,#authors > li a,#table-of-contents a,footer a,nav a{text-decoration:none}
 html,body,#authors > li > p,#ebooks > li > p{margin:0;padding:0}
+header {height:115px;width:100%;background:#115692 url(images/header_bg.gif) 0 0 repeat-x;position:relative}
+#logo {position:absolute;vertical-align:middle;top:0px;left:0px;margin:0px 0 0 15px;padding:0}
+#slogan {top:30px;left:113px;position:absolute;padding:0}
 main a:hover{color:#4f9d85}
-main[dir=ltr] h1,article[dir=ltr] h1,header a{font:48px "League Spartan"}
+main[dir=ltr] h1,article[dir=ltr] h1{font:48px "League Spartan"}
 main[dir=ltr] h2,article[dir=ltr] h2{font:32px "League Spartan"}
 main[dir=rtl],article[dir=rtl]{direction:rtl;font-family:'KFGQPC Uthman Taha Naskh'}
 main[dir=rtl] h1,article[dir=rtl] h1{font-size:48px;font-weight:200}
 main[dir=rtl] h2,article[dir=rtl] h2{font-size:32px;font-weight:200}
 nav{background-color:#000;border-bottom:5px solid #222;height:26px}
-nav a{background:url(images/nav.png) center top no-repeat;color:#fff;float:right;font-size:12px;padding:5px 10px}
+nav a{background:url(images/navigation_bg.gif) center top no-repeat;color:#fff;float:right;font-size:12px;padding:5px 10px}
 ul{list-style-type:disc}
 @media only screen and (max-width: 480px) {
 #authors > li img,#ebooks > li img,#cover{height:224px;width:165px}
